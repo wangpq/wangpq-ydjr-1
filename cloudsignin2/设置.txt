@@ -1,0 +1,5 @@
+北京-iOS-史国强
+
+云签到  在贵州通里面  给他拼的URL为?platform=ios&app=gzt
+
+云签到独立APPURL后面拼接的是?platform=ios&app=cloudsignin

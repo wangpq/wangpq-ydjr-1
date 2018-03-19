@@ -1,0 +1,93 @@
+﻿body{
+    background-color:#f4f4f4;
+}
+.recharge{
+    display: none;
+}
+.card{
+    background-color: #03adea;
+    color:#fff;
+    padding:0.3rem 0;
+}
+.card .number{
+    font-size:0.38rem;
+    margin-bottom:0.64rem;
+    padding-left:0.44rem;
+}
+.card .money{
+    text-align: center;
+    font-size:0.8rem;
+    font-family: "黑体";
+    margin-bottom:0;
+}
+.card .txt{
+    text-align: center;
+    font-size:0.3rem;
+    margin-bottom:0.3rem;
+}
+.select{
+    width:100%;
+    padding:0.2rem 0.1rem;
+}
+.select ul{
+    width:100%;
+    display: flex;
+    flex-direction: row; 
+    margin-bottom:0.2rem;
+}
+.select li{
+    flex:1;
+}
+.select li span{
+    display: block;
+    padding:0.34rem 0;
+    text-align: center;
+    border:1px solid #c7c7c7;
+    font-size:0.46rem;
+    color:#6f6f6f;
+    margin:0.05rem 0.15rem;
+    transition: all 0.4s;
+}
+.select li:active span,
+.select li.active span{
+    border-color: #03adea;
+    color:#03adea;
+}
+.desc{
+    color:#6f6f6f;
+    padding-left:0.44rem;
+    margin-bottom:1.3rem; 
+    font-size:0.38rem;
+}
+.desc>b{
+    font-weight: normal;
+}
+.btn-recharge{
+    background-color: #10abf2;
+    box-shadow:0.02rem 0.04rem 0.2rem 0.01rem #c3eafc; 
+    border-radius:0.2rem;
+    padding:0.38rem 0;
+    margin:0 0.68rem;
+    text-align: center;
+    color:#fff;
+    font-size:0.44rem;
+    margin-bottom:0.4rem;
+    transition:all 0.4s;
+    transition: all 0.4s;
+}
+.btn-recharge:active{
+    background-color: #22b9ff;
+}
+footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:0.4rem 0;
+}
+footer p{
+    text-align: center;
+    color:#6f6f6f;
+    font-size:0.28rem;
+    line-height: 1.2;
+}

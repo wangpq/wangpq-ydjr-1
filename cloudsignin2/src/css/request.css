@@ -1,0 +1,51 @@
+﻿.form{
+    margin-bottom:1.25rem;
+}
+.form p{
+    padding: 0.3rem 0.44rem;
+    border-bottom:  1px solid #e4e4e4;
+    display: -webkit-flex;
+    display: flex;
+   -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.form p label{
+    color:#323232;
+    width:1.88rem;
+    text-align: right;
+    display:inline-block;
+    font-size:0.4rem;
+}
+.form p input,
+.form p select{
+    color:#323232;
+   -webkit-flex:1;
+    flex: 1;
+    padding:0 0.4rem;
+    font-size:0.4rem;
+}
+.btn-open{
+    background-color: #47a2ff;
+    border-radius:0.1rem;
+    color:#fff;
+    padding:0.35rem 0;
+    margin:0 1.4rem;
+    text-align: center;
+    font-size:0.44rem;
+    margin-bottom:2.65rem;
+    transition:background-color 0.3s;
+}
+.btn-open:active{
+    background-color: #2792ff;
+}
+.tips{
+    padding:0 0.42rem;
+    font-size:0.36rem;
+}
+.tips p:first-child{
+    margin-bottom:0.15rem;
+    color:#646464;
+}
+.tips p:last-of-type{
+    color:#2a68f5;
+}

@@ -1,0 +1,267 @@
+﻿body{
+    background-color: #fff;
+}
+
+/*移动轮播图 start*/
+.swipe{
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    background-color:#fff;
+}
+.swipe-wrap > div>img {
+    width:100%;
+    display:block;
+    margin:0 auto;
+}
+.swipe .num-box {
+    text-align: center;
+    overflow:hidden;
+    font-size:0;
+    position:absolute;
+    width:100%;
+    height:0.3rem;
+    bottom:0.2rem;
+    z-index:10;
+}
+.swipe .num-box span{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background-color: #fff;
+    margin: 0 0.2rem;;
+    color:#fff;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ;
+    -moz-transition: background-color 1s ;
+    transition: background-color 1s ;
+}
+.swipe .num-box span.current {
+    background-color: #ff7452;
+}
+
+
+
+.form{
+    border:1px solid #e4e4e4;
+    margin:0.84rem 0.8rem;
+    border-radius:0.15rem;
+}
+.form p{
+    border-bottom:1px solid #e4e4e4;
+    padding:0.24rem 0.2rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.form p:last-of-type{
+   border-bottom:none;
+}
+.form p label.icon-user{
+   display: block;
+   width:2.1rem;
+   overflow:hidden;
+}
+.form p label.icon-tel{
+   display: block;
+   width:2.6rem;
+   height:0.7rem;
+   overflow:hidden;
+}
+.form p label i{
+    display:inline-block;
+    width:0.5rem ;
+    height:0.8rem;
+    vertical-align: middle;
+    margin-right:0.2rem;
+    margin-left:0.15rem;
+}
+.form p label span{
+    vertical-align: middle;
+    color:#323232;
+    font-size:0.44rem;
+}
+.form p input{
+    -webkit-flex:1;
+    flex: 1;
+    font-size:0.44rem;
+}
+.btn-box{
+    margin:1rem 0.8rem;
+}
+.btn-box .btn{
+    border-radius:0.6rem;
+    padding:0.31rem 0;
+    text-align: center;
+    color:#fff;
+    display:block; 
+    margin-bottom:0.36rem;
+    transition:background-color 0.3s;
+    font-size:0.46rem;
+}
+.btn-box .btn.btn-success{
+    background-color:#6fbc83; 
+}
+.btn-box .btn.btn-success:active{
+    background-color:#3ab95b; 
+}
+.btn-box .btn.btn-primary{
+    background-color:#4a97ff; 
+}
+.btn-box .btn.btn-primary:active{
+    background-color:#207efd; 
+}
+
+
+.icon-user{
+    background: url(../images/icon-user.png) 0.1rem center no-repeat;
+    background-size: auto 90%;
+    padding-left:0.8rem;
+}
+.icon-tel{
+    background: url(../images/icon-tel.png) 0.1rem center no-repeat;
+    background-size: auto 90%;
+    padding-left:0.8rem;
+}
+
+
+
+
+
+
+/*******弹出框*******/
+
+.yd-pop-box{
+    position: absolute;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index:9999;
+    background-color:rgba(0,0,0,0.2);
+    display:none;
+}
+.yd-pop-box .c{
+    width:100%;
+    height:100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.yd-pop-box .bd,
+.yd-pop-box [wp="wpdom"]{
+    width:6.68rem;
+    margin:0 auto;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+    position: relative;
+    min-height:2rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    border-radius: 0.25rem;
+}
+.yd-pop-box [wp="wpdom"]:before{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    content:"";
+    background-size: 100% 100%;
+    z-index:1;
+}
+
+.yd-pop-box [wp="wpdom"] .close{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    right: -0.3rem;
+    top: -0.3rem;
+    background-size: 100% 100%;
+    cursor:pointer;
+    z-index:3;
+}
+.yd-pop-box .content{
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    width:100%;
+    position:relative;
+    z-index:4;
+}
+.yd-pop-box .content .text{
+    color:#464646;
+    font-size:0.4rem;
+    width:80%;
+    margin:0 auto;
+    line-height:1.38;
+    text-align: center;
+    padding:0.6rem 0;
+}
+
+.yd-pop-box .btn{
+    width: 100%;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-top:1px solid #eaeaea;
+}
+.yd-pop-box .btn .col{
+    -webkit-flex:1;
+    flex: 1; 
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center; 
+}
+.yd-pop-box .btn .col:first-child{
+    border-right:1px solid #eaeaea;
+}
+.yd-pop-box .btn .col span{
+    display:inline-block;
+    padding:0.3rem 0.4rem;
+    color:#333;
+    border-radius:0.6rem;
+    cursor:pointer;
+    font-size:0.38rem;
+}
+
+.yd-pop-box [wp="wpdom"].alert{
+    padding: 0.8rem 0 0.8rem;
+}
+.yd-pop-box [wp="wpdom"].alert .btn{
+    display:none;
+}
+.yd-pop-box [wp="wpdom"].confirm .btn{
+    display:block;
+}
+
+.loading .c .body{
+    max-height: 3.2rem;
+}

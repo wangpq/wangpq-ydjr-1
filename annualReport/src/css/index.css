@@ -1,0 +1,1587 @@
+﻿html, body{
+    height:100%;
+    overflow:hidden;
+    background: #09101b url(../images/wploading.gif) center center no-repeat;
+}
+.current .wAni {
+    visibility: hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.btn-audio{
+    position:absolute;
+    right:8%;
+    top:8%;
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../images/audio.png) center center no-repeat;
+    background-size:100% 100%;
+    z-index:100;
+    display: none;
+}
+.page{
+    display: none;
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#09101b;
+    color:#d6e5ff;
+}
+.page.current{
+    display:inline-block;
+}
+.page.next{
+    display:inline-block;
+    z-index: 2;
+}
+.page.prev{
+    display:inline-block;
+    z-index: 2;
+}
+.page .container{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.page .container>canvas{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+.page .star{
+    position: absolute;
+    z-index:11;
+    background: #09101b url(../images/star.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.page .header{
+    position: absolute;
+    left:0;
+    right:0;
+    top:8%;
+    text-align: left;
+    padding:0 8%;
+    z-index:10;
+}
+.page .header h2>i{
+    display:inline-block;
+    width:1.2rem;
+    height:1.2rem;
+    vertical-align: middle;
+    background: #09101b url(../images/star.png) center bottom no-repeat;
+    background-size: 100% auto;
+
+}
+.page .header h2>span{
+    font-size:0.56rem;
+    margin-left:0.1rem;
+    vertical-align: middle;
+
+}
+.page .header h4{
+    text-align: right;
+    font-size:0.4rem;
+}
+.page .body{
+    position: absolute;
+    left:0;
+    right:0;
+    top:20%;
+    bottom:6%;
+    z-index:10;
+}
+
+
+.page1{
+    background: #09101b url(../images/page1FootBg.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.page1 .header{
+    top:14%;
+    z-index:10;
+}
+.page1 .header h2{
+    text-align:left;
+    padding-left:10%;
+}
+.page1 .body h1,
+.page1 .body h2,
+.page1 .foot{
+    position: absolute;
+    left:0;
+    right:0;
+    color:#d6e5ff;
+}
+.page1 .body{
+    z-index:10;
+}
+.page1 .body h1{
+    top:2%;
+    text-align: center;
+    font-size:0.68rem;
+    font-weight: bold;
+    line-height: 1.48;
+}
+.page1 .body h2{
+    top:40%;
+    text-align: center;
+    font-size:0.52rem;
+    font-weight: normal;
+}
+.page1 .body .star_1{
+    left:70%;
+    top:30%;
+    width:0.6rem;
+    height:0.6rem;
+}
+.page1 .body .star_2{
+    left:20%;
+    top:70%;
+    width:0.3rem;
+    height:0.3rem;
+}
+.page1 .foot{
+    bottom:3%;
+    text-align: right;
+    padding-right:0.44rem;
+    font-size:0.36rem;
+    font-weight: normal;
+}
+.page1 canvas{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:1;
+}
+
+
+.page2 canvas{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.page2 .body .p{
+    width:100%;
+    position: absolute;
+    left:0;
+    right:0;
+}
+.page2 .body .p:first-of-type{
+    top:0;
+    margin-top:0.5rem;;
+    padding-left:0.8rem;
+    font-size:0.4rem;
+}
+.page2 .body .p:first-of-type>.num{
+    font-size:0.8rem;
+}
+
+.page2 .body .p:nth-of-type(2){
+    top:16%;
+    padding-left:1rem;
+}
+.page2 .body .p:nth-of-type(2)>.progress{
+    display:block;
+    width:60%;
+    height:1.6rem;
+    background: #09101b url(../images/page2_men.png) center bottom no-repeat;
+    background-size: auto 100% ;
+}
+.page2 .body .p:nth-of-type(2)>.progress>.progress-bar{
+    display:block;
+    width:100%;
+    height:1.6rem;
+    background: #09101b url(../images/page2_men_light.png) left center no-repeat;
+    background-size: auto 100% ;
+    transition:all 1.2s ease-in-out;
+}
+.page2 .body .p:nth-of-type(3){
+    top:44%;
+    padding-right:0.8rem;
+    text-align: right;
+    font-size:0.4rem;
+}
+.page2 .body .p:nth-of-type(4){
+    top:50%;
+}
+.page2 .body .p:nth-of-type(4)>img{
+    display: block;
+    width:70%;
+    margin:0 auto;
+}
+.page2 .body .star_1{
+    left:80%;
+    top:20%;
+    width:0.2rem;
+    height:0.2rem;
+}
+.page2 .body .star_2{
+    left:10%;
+    top:60%;
+    width:0.4rem;
+    height:0.4rem;
+}
+.page2 .body .gy-map{
+    position: absolute;
+    left:0;
+    right:0;
+    top:48%;
+    width:100%;
+    text-align: right;
+    padding:0 10%;
+}
+.page2 .body .gy-map .map{
+    display:inline-block;
+    width:7.2rem;
+    height:6rem;
+    background: url(../images/page8_map.png) center center no-repeat;
+    background-size:auto 100%;
+    position: relative;
+}
+.page2 .body .gy-map .map>.area{
+    position: absolute;
+    width:3em;
+    height:0.8rem;
+}
+.page2 .body .gy-map .map>.area>i{
+    display:inline-block;
+    width:100%;
+    height:0.28rem;
+    background: url(../images/men3.png) center center no-repeat;
+    background-size:auto 100%;
+    margin-right:0;
+}
+.page2 .body .gy-map .map>.area>i.disable{
+    background: url(../images/men3Disable.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page2 .body .gy-map .map>.area>span{
+    display:block;
+    width:100%;
+    font-size:0.24rem;
+    text-align: center;
+}
+.page2 .area.zunyi{
+    left: 50%;
+    top:25%;
+}
+.page2 .area.tongren{
+    left: 80%;
+    top:24%;
+}
+.page2 .area.guiyang{
+    left: 48%;
+    top:46%;
+}
+.page2 .area.guiyang>i{
+    height:0.4rem!important;
+}
+.page2 .area.anshun{
+    left: 36%;
+    top:65%;
+}
+.page2 .area.xingyi{
+    left: 22%;
+    top:85%;
+}
+.page2 .area.duyun{
+    left: 58%;
+    top:65%;
+}
+.page2 .star{
+    left:45%;
+    top:20%;
+    width:0.2rem;
+    height:0.2rem;
+}
+
+
+.page3 .p{
+    position: absolute;
+    left:0;
+    right:0;
+}
+.page3 .hd{
+    padding: 0 12%;
+}
+.page3 .hd>i{
+    display: inline-block;
+    width: 0.44rem;
+    height: 0.44rem;
+    vertical-align: middle;
+    background: #09101b url(../images/star.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.page3 .hd>span{
+    font-size:0.38rem;
+    vertical-align: middle;
+}
+.page3 .bd .tr{
+    display:flex;
+    flex-direction: row;
+    padding:0;
+}
+.page3 .bd .tr .td{
+    flex :1;
+}
+.page3 .bd .tr .td>i{
+    display:block;
+    widows: 1rem;
+    height:1.4rem;
+    margin-bottom:0.2rem;
+}
+.icon-man{
+    background:url(../images/page3_man.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.icon-woman{
+    background:url(../images/page3_woman.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page3 .bd .tr .td>.value{
+    display:block;
+    text-align: center;
+    font-size:0.68rem;
+}
+.page3 .body .p:first-of-type{
+    top:7%;
+}
+.page3 .body .p:nth-of-type(2){
+    top:17%;
+}
+.page3 .body .p:nth-of-type(3){
+    top:48%;
+}
+.page3 .body .p:last-of-type{
+    top:55%;
+    padding: 0 10%;
+    bottom:0;
+}
+.page3 .body .p:last-of-type>img{
+    display: block;
+    width:85%;
+    max-height: 100%;
+    margin: 0.4rem auto 0;
+}
+.page3 .body .p:last-of-type>.page3_bar{
+    width:100%;
+    height:5.2rem;
+}
+.page3 .body .star_1{
+    left:80%;
+    top:20%;
+    width:0.2rem;
+    height:0.2rem;
+}
+.page3 .star{
+    left:80%;
+    top:30%;
+    width:0.3rem;
+    height:0.3rem;
+}
+
+
+
+.page4 .earth-container{
+    position: absolute;
+    left:0;
+    right:0;
+    top:40%;
+    margin-top:-4rem;
+    padding-top:1rem;
+}
+.page4 .earth{
+    position: relative;
+    margin:0 auto;
+    width:8rem;
+    height:8rem;
+
+    background: url(../images/page4_earth.png) center center no-repeat;
+    background-size:80% 80%;
+    padding-top:1rem;
+}
+.page4 .outer{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    content:"";
+    background: url(../images/page4_yuan.png) center center no-repeat;
+    background-size:100% 100%;
+}
+.page4 .inner{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    border-radius: 3rem;
+    overflow:hidden;
+    background: url(../images/page4_earth_text.png) center center no-repeat;
+    background-size:70% 65%;
+
+    -webkit-animation-name: earthAnimate;
+    animation-name: earthAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration:4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.page4 .earth .txt{
+    position: absolute;
+    font-size:0.36rem;
+    display: none;
+}
+.page4 .earth .txt_1{
+    left:40%;
+    top:30%;
+    font-size:0.5rem;
+}
+.page4 .earth .txt_2{
+    left:44%;
+    top:48%;
+    font-size:0.46rem;
+}
+.page4 .earth .txt_3{
+    left:30%;
+    top:72%;
+    font-size:0.40rem;
+    transform: perspective(600px) rotateX(-35deg);
+}
+.page4 .earth .txt_4{
+    left:24%;
+    top:20%;
+    font-size:0.5rem;
+    transform: perspective(800px) rotateY(-45deg) ;
+}
+.page4 .earth .txt_5{
+    left:13%;
+    top:42%;
+    font-size:0.68rem;
+    transform: perspective(1000px) rotateY(-45deg) ;
+}
+.page4 .earth .txt_6{
+    left: 15%;
+    top: 66%;
+    transform: perspective(1400px) rotateY(-45deg) ;
+}
+.page4 .earth .txt_7{
+    left:60%;
+    top:23%;
+    transform: perspective(800px) rotateY(45deg);
+}
+.page4 .earth .txt_8{
+    left:22%;
+    top:55%;
+}
+.page4 .earth .txt_9{
+    left:18%;
+    top:30%;
+    transform: rotate(-5deg);
+}
+.page4 .earth .txt_10{
+    left:60%;
+    top:60%;
+    transform: perspective(500px) rotateY(35deg);
+}
+.page4 .earth .txt_11{
+    left:36%;
+    top:82%;
+    transform: perspective(800px) rotateX(-35deg);
+}
+.page4 .earth .txt_12{
+    left:70%;
+    top:40%;
+    transform: perspective(800px) rotateY(45deg) ;
+}
+
+
+.page4 .star{
+    left:20%;
+    bottom:2%;
+    width:0.4rem;
+    height:0.4rem;
+}
+
+
+.page5 .body{
+    padding: 20% 8%;
+}
+.page5 .body  p{
+    font-size:0.38rem;
+    position: absolute;
+    left:0;
+    right:0;
+    padding: 0 10%;
+}
+.page5 .body  p .num{
+    font-size:0.8rem;
+}
+.page5 .body  p:first-of-type{
+    text-align:left;
+    top:0;
+}
+.page5 .body  p i{
+    display:inline-block;
+    width:0.5rem;
+    height:0.5rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+}
+.page5 .body p i.icon-1{
+    background: url(../images/page5_icon_1.png) center center no-repeat;
+    background-size:100% 100%;
+}
+.page5 .body p i.icon-2{
+    background: url(../images/page5_icon_2.png) center center no-repeat;
+    background-size:100% 100%;
+}
+.page5 .body p i.icon-3{
+    width:0.8rem;
+    background: url(../images/page5_icon_3.png) center center no-repeat;
+    background-size:100% auto ;
+}
+.page5 .body p i.icon-4{
+    width:0.8rem;
+}
+.page5 .body p .text{
+    vertical-align: middle;
+}
+.page5 .body p.tree{
+    text-align: right!important;
+    padding:0;
+}
+.page5 .body p.tree i{
+    display: inline-block;
+    width:3.6rem;
+    height: 2.4rem;
+    background: url(../images/page5_tree.png) center center no-repeat;
+    background-size:auto 100% ;
+}
+.page5 .body  p:nth-of-type(1){
+    top:24%;
+}
+.page5 .body  p:nth-of-type(2){
+    top:36%;
+    text-align: center;
+}
+.page5 .body  p:nth-of-type(3){
+    top:58%;
+    line-height:1.5
+}
+.page5 .body  p:nth-of-type(4){
+    top:70%;
+}
+.page5 .body  p:nth-of-type(5){
+    top:76%;
+}
+.page5 .star_1{
+    left:20%;
+    bottom:2%;
+    width:0.4rem;
+    height:0.4rem;
+}
+.page5 .star_2{
+    left:88%;
+    top:38%;
+    width:0.2rem;
+    height:0.2rem;
+}
+
+.page6 .body  p{
+    font-size:0.36rem;
+}
+.page6 .body p{
+    font-size:0.38rem;
+    position: absolute;
+    left:0;
+    right:0;
+    padding: 0 6%;
+    line-height:1.88;
+}
+.page6 .body p .num{
+    font-size:0.6rem;
+    line-height: 1.88;
+}
+.page6 .body p:first-of-type{
+    text-align:center;
+}
+.page6 .body p:nth-of-type(2){
+    text-align:center;
+}
+.page6 .body p i{
+    display:inline-block;
+    width:0.5rem;
+    height:0.5rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+}
+.page6 .body p i.icon-1{
+    background: url(../images/page6_icon_1.png) center center no-repeat;
+    background-size:100% 100%;
+}
+.page6 .body p i.icon-2{
+    background: url(../images/page6_icon_2.png) center center no-repeat;
+    background-size:100% 100%;
+}
+.page6 .body p .text{
+    vertical-align: middle;
+}
+.page6 .body .tree{
+    text-align: right!important;
+    padding:0;
+}
+.page6 .body .tree i{
+    display: inline-block;
+    width:3.8rem;
+    height: 1.5rem;
+    background: url(../images/page6_tree.png) center center no-repeat;
+    background-size:auto 100% ;
+}
+.page6 .body  p:nth-of-type(1){
+    top:24%;
+}
+.page6 .body  p:nth-of-type(2){
+    top:54%;
+    text-align: center;
+}
+.page6 .body  p:nth-of-type(3){
+    top:75%;
+}
+.page6 .body  p:nth-of-type(4){
+    top:80%;
+}
+.page6 .body  p:nth-of-type(5){
+    top:80%;
+}
+.page6 .star_1{
+    left:20%;
+    bottom:2%;
+    width:0.4rem;
+    height:0.4rem;
+}
+.page6 .star_2{
+    left:88%;
+    top:38%;
+    width:0.2rem;
+    height:0.2rem;
+}
+
+
+.page7 .body .tr p{
+    padding:1rem 10%;
+    font-size:0.36rem;
+    text-align:center;
+    line-height:1.5;
+}
+.page7 .body .tr p .num{
+    font-size:0.8rem;
+}
+.page7 .body .tr i{
+    display:inline-block;
+    width:0.5rem;
+    height:0.5rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+}
+.page7 .body .tr i.icon-1{
+    background: url(../images/page7_icon_1.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page7 .body .tr i.icon-2{
+    background: url(../images/page7_icon_2.png) center center no-repeat;
+    background-size:auto 100%;
+    width: 0.8rem;
+}
+.page7 .body .tr i.icon-3{
+    background: url(../images/page7_icon_3.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page7 .body .tr .text{
+    vertical-align: middle;
+}
+.page7 .body .tr p{
+    position: absolute;
+    left:0;
+    right:0;
+    text-align: center;
+}
+.page7 .body .tr p:first-of-type{
+    top:8%;
+}
+.page7 .body .tr p:nth-of-type(2){
+    top:15%;
+}
+.page7 .body .tr p:nth-of-type(3){
+    top:50%;
+}
+.page7 .foot{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:5%;
+    top:75%;
+    /*
+    background: url(../images/page7_foot_bg.png) center center no-repeat;
+    background-size:100% 100%;
+    */
+}
+.page7 .foot>img{
+    display:block;
+    width:100%;
+    height: 100%;
+    display: none;
+}
+.page7 .star_1{
+    left:15%;
+    bottom:20%;
+    width:0.4rem;
+    height:0.4rem;
+}
+.page7 .star_2{
+    left:65%;
+    top:25%;
+    width:0.3rem;
+    height:0.3rem;
+}
+.page7 .body .content{
+    position: absolute;
+    left:0;
+    width:100%;
+    top:35%;
+    bottom:20%;
+}
+.page7 .body .content>.box{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.page7 .body .content .ball{
+    position: absolute;
+    left:0;
+    display:block;
+    background: linear-gradient(#2f4263, #0f1b2b);
+    color:#1fbafc;
+    text-align: center;
+    -webkit-animation-name: ballAnimate;
+    animation-name: ballAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration:4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.page7 .body .content .ball.xd{
+    left:10%;
+    top:15%;
+    width:1.8rem;
+    height:1.8rem;
+    border-radius:0.9rem;
+    line-height: 1.8rem;
+    font-size:0.48rem;
+}
+.page7 .body .content .ball.cx{
+    left:15%;
+    top:65%;
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:0.8rem;
+    line-height: 1.6rem;
+    font-size:0.52rem;
+}
+.page7 .body .content .ball.lc{
+    left:35%;
+    top:6%;
+    width:1.4rem;
+    height:1.4rem;
+    border-radius:0.7rem;
+    line-height: 1.4rem;
+    font-size:0.42rem;
+}
+.page7 .body .content .ball.gjs{
+    left:40%;
+    top:40%;
+    width:1.4rem;
+    height:1.4rem;
+    border-radius:0.7rem;
+    line-height: 1.4rem;
+    font-size:0.32rem;
+}
+.page7 .body .content .ball.jj{
+    left:45%;
+    bottom:0;
+    width:2rem;
+    height:2rem;
+    border-radius:1rem;
+    line-height: 2rem;
+    font-size:0.58rem;
+}
+.page7 .body .content .ball.zq{
+    left:70%;
+    bottom:5%;
+    width:1.2rem;
+    height:1.2rem;
+    border-radius:0.6rem;
+    line-height: 1.2rem;
+    font-size:0.36rem;
+}
+.page7 .body .content .ball.xyk{
+    left:68%;
+    top:20%;
+    width:1.8rem;
+    height:1.8rem;
+    border-radius:0.9rem;
+    line-height: 1.8rem;
+    font-size:0.42rem;
+}
+
+
+
+
+.page8 .body{
+    z-index:10;
+}
+.page8 .body .tr p{
+    position: absolute;
+    left:0;
+    right:0;
+    padding:0 10%;
+    font-size:0.36rem;
+    text-align:center;
+    line-height:1.5;
+}
+.page8 .body .tr p .num{
+    font-size:0.8rem;
+}
+.page8 .body .tr p:first-of-type{
+    top:16%;
+}
+.page8 .body .tr p:nth-of-type(2){
+    top:36%;
+}
+.page8 .body .tr i{
+    display:inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+}
+.page8 .body .tr i.icon-1{
+    width:0.6rem;
+    background: url(../images/page8_icon_1.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page8 .body .tr i.icon-2{
+    background: url(../images/page8_icon_2.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page8 .body .tr .legend i{
+    display:inline-block;
+    width:0.3rem;
+    height:0.3rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+    background: url(../images/star.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page8 .body .tr .legend{
+    font-size:0.32rem;
+    margin-top:-0.4rem;
+}
+.page8 .body .gy-map{
+    position: absolute;
+    left:0;
+    right:0;
+    top:48%;
+    width:100%;
+    text-align: right;
+    padding:0 10%;
+}
+.page8 .body .gy-map .map{
+    display:inline-block;
+    width:7.2rem;
+    height:6rem;
+    background: url(../images/page8_map.png) center center no-repeat;
+    background-size:auto 100%;
+    position: relative;
+}
+.page8 .body .gy-map .map>.area{
+    position: absolute;
+    width:2em;
+    height:0.8rem;
+}
+.page8 .body .gy-map .map>.area>i{
+    display:inline-block;
+    width:100%;
+    height:0.4rem;
+    background: url(../images/star.png) center center no-repeat;
+    background-size:auto 100%;
+    margin-right:0;
+}
+.page8 .body .gy-map .map>.area>span{
+    display:block;
+    width:100%;
+    font-size:0.24rem;
+    text-align: center;
+}
+.page8 .area.zunyi{
+    left: 50%;
+    top:25%;
+}
+.page8 .area.tongren{
+    left: 80%;
+    top:24%;
+}
+.page8 .area.guiyang{
+    left: 48%;
+    top:46%;
+}
+.page8 .area.guiyang>i{
+    height:0.5rem!important;
+}
+.page8 .area.anshun{
+    left: 36%;
+    top:65%;
+}
+.page8 .area.xingyi{
+    left: 22%;
+    top:85%;
+}
+.page8 .area.duyun{
+    left: 58%;
+    top:65%;
+}
+.page8 .area.kaiyang{
+    left: 52%;
+    top: 44%;
+}
+.page8 .area.kaiyang>i{
+    height:0.36rem!important;
+}
+.page8 .area.kaiyang{
+    width:3em!important;
+}
+.page8 .star{
+    left: 10%;
+    top: 35%;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.page8 .body .tr:first-of-type{
+    top:10%;
+    height:48%;
+}
+.page8 .body .tr:first-of-type .ma{
+    position: relative;
+    width:100%;
+    height:100%;
+    background: url(../images/page8_top_img.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.page8 .body .ma>.item{
+    display: inline-block;
+    position: relative;
+    width:1rem;
+    height:1rem;
+    line-height: 1rem;;
+    background-color: #12263e;
+    text-align: center;
+}
+.page8 .body .item>i{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.page8 .body .item>.txt{
+    display: block;
+    text-align: center;
+}
+
+.page9 .body{
+    padding: 10% 8% 20%;
+    z-index:10;
+}
+.page9 .body .tr p{
+    padding:0.2rem 0 0.2rem;
+    font-size:0.38rem;
+    text-align:left;
+    line-height: 1;
+}
+.page9 .body .tr p .num{
+    font-size:0.8rem;
+}
+.page9 .body .tr i{
+    display:inline-block;
+    width:0.5rem;
+    height:0.5rem;
+    vertical-align: middle;
+    margin-right:0.15rem;
+    background: url(../images/star.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page9 .body .tr p .img{
+    display: inline-block;
+    width:1.4rem;
+    height:1.4rem;
+    vertical-align: middle;
+}
+.page9 .body .tr p:nth-of-type(1) .img{
+    width:1.6rem;
+    background: url(../images/page9_icon_1.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page9 .body .tr p:nth-of-type(2) .img{
+    background: url(../images/page9_icon_2.png) center center no-repeat;
+    background-size:auto 90%;
+}
+.page9 .body .tr p:nth-of-type(3) .img{
+    background: url(../images/page9_icon_3.png) center center no-repeat;
+    background-size:auto 100%;
+}
+.page9 .body .tr p:nth-of-type(4) .img{
+    background: url(../images/page9_icon_4.png) center center no-repeat;
+    background-size:auto 70%;
+}
+.page9 .body .tr p:nth-of-type(5) .img{
+    background: url(../images/page9_icon_5.png) center center no-repeat;
+    background-size:auto 60%;
+}
+.page9 .body .tr p:nth-of-type(6) .img{
+    width:1rem;
+    background: url(../images/page9_icon_6.png) center center no-repeat;
+    background-size:auto 60%;
+}
+
+.page9 {
+    background: #09101b url(../images/page1FootBg.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.page9 .star_1{
+    left:90%;
+    bottom:15%;
+    width:0.2rem;
+    height:0.2rem;
+}
+.page9 .star_2{
+    left:30%;
+    bottom:10%;
+    width:0.3rem;
+    height:0.3rem;
+}
+
+.page10{
+    background: #09101b url(../images/page10_map_transparent.png) center bottom no-repeat;
+    background-size:100% 75%;
+}
+.page10 .body{
+    padding: 20% 8%;
+}
+.page10 .body .item{
+    position: absolute;
+    left:8%;
+    right:8%;
+}
+.page10 .body .item:first-of-type{
+    top:15%;
+}
+.page10 .body .item:nth-of-type(2){
+    top:53%;
+}
+.page10 .body .item:nth-of-type(3){
+    top:85%;
+}
+
+.page10 .body .hd{
+    margin-bottom:0.5rem;
+    font-size:0.44rem;
+    text-align:left;
+}
+.page10 .body .tr{
+    display: flex;
+    flex-direction: row;
+}
+.page10 .body .tr>.td{
+    flex :1;
+}
+.page10 .body .bd.first .tr>.td{
+    text-align: right;
+}
+.page10 .body .bd.second .tr{
+    width:70%;
+    margin:0 auto;
+}
+.page10 .body .hd.second{
+    text-align: center;
+}
+.page10 .body .bd.second .tr>.td{
+    text-align: center;
+}
+.page10 .star_1{
+    left:80%;
+    bottom:10%;
+    width:0.4rem;
+    height:0.4rem;
+}
+.page10 .star_2{
+    left:70%;
+    top:25%;
+    width:0.3rem;
+    height:0.3rem;
+}
+
+
+
+.wpJdt{
+    display:inline-block;
+    height:1rem;
+}
+.wpJdt>.canvas{
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    vertical-align: middle;
+}
+.wpJdt>.canvas>canvas{
+    display:block;
+    width:1rem;
+    height:1rem;
+}
+.wpJdt>.text{
+    display:inline-block;
+    height:1rem;
+    vertical-align: middle;
+}
+.wpJdt>.text>.value{
+    border-bottom:1px solid #d7e7ff;
+    padding:0 0.1rem 0.1rem;
+    text-align: center;
+    font-size:0.32rem;
+    color:#d7e7ff;
+    line-height: 1;
+}
+.wpJdt>.text>.value>b{
+    font-size:0.48rem;
+    font-weight: normal;
+}
+.wpJdt>.text>.txt{
+    font-size:0.36rem;
+    text-align: center;
+    color:#d7e7ff;
+}
+
+.page11 .body{
+    padding: 10% 0%;
+    z-index:10;
+    bottom: 20%;
+    overflow:hidden;
+}
+
+.page11 .body>.container{
+    position: relative;
+    width:100%;
+    height:100%;
+    background: url(../images/page11_img.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.page11 .body p{
+    padding:0;
+    font-size:0.36rem;
+    text-align:center;
+}
+.page11 .body p:first-of-type{
+    display: block;
+    width:100%;
+    margin:0 auto;
+    position: absolute;
+    top:-8%;
+}
+.page11 .body p:nth-of-type(2)>img{
+    display: block;
+    width:85%;
+    margin:0 auto;
+}
+.page11 .body p.qrcode{
+    position: absolute;
+    left:0;
+    right:0;
+    top:38%;
+}
+.page11 .body p.qrcode>img{
+    width:58%;
+}
+.page11 .body p.keyword{
+    position: absolute;
+    left:0;
+    right:0;
+    top:68%;
+}
+.page11 .body p.keyword>img{
+    width:58%;
+}
+.page11 .footer{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:10%;
+}
+.page11 .footer p{
+    text-align:center;
+    font-size:0.32rem;
+}
+.page11 .footer p:first-of-type span{
+    display: inline-block;
+    text-align:center;
+    font-size:0.38rem;
+    padding:0 0.2rem 0.4rem;
+    border-bottom:1px solid #d6e5ff;
+    margin-bottom:0.2rem;
+}
+.page11 .star_1{
+    left:68%;
+    top:20%;
+    width:0.2rem;
+    height:0.2rem;
+}
+.page11 .star_2{
+    left:88%;
+    top:60%;
+    width:0.4rem;
+    height:0.4rem;
+}
+
+
+
+@-webkit-keyframes starAnimate {
+    from, to  {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes starAnimate {
+    from, to  {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.starAnimate {
+    -webkit-animation-name: starAnimate;
+    animation-name: starAnimate;
+    -webkit-animation-duration: 2s;
+    animation-duration:2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes gongnengAnimate {
+    from, to  {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes gongnengAnimate {
+    from, to  {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+.gongnengAnimate {
+    -webkit-animation-name: gongnengAnimate;
+    animation-name: gongnengAnimate;
+    -webkit-animation-duration: 2s;
+    animation-duration:2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+@-webkit-keyframes renAnimate {
+    from, to  {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes renAnimate {
+    from, to  {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.renAnimate {
+    -webkit-animation-name: renAnimate;
+    animation-name: renAnimate;
+    -webkit-animation-duration: 2s;
+    animation-duration:2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+@-webkit-keyframes earthAnimate {
+    from,to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-0.2rem);
+        transform: translateX(-0.2rem);
+    }
+}
+
+@keyframes earthAnimate {
+    from,to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-0.2rem);
+        transform: translateX(-0.2rem);
+    }
+}
+
+.earthAnimate {
+    -webkit-animation-name: earthAnimate;
+    animation-name: earthAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration:4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+@-webkit-keyframes rotateAnimate {
+    from {
+        -webkit-transform: rotate(0);
+        transform:rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAnimate {
+    from {
+        -webkit-transform: rotate(0);
+        transform:rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotateAnimate {
+    -webkit-animation-name: rotateAnimate;
+    animation-name: rotateAnimate;
+    -webkit-animation-duration: 20s;
+    animation-duration:20s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes treeAnimate {
+    from,to{
+        opacity: 0.9;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes treeAnimate {
+    from ,to{
+        opacity: 0.9;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.treeAnimate {
+    -webkit-animation-name: treeAnimate;
+    animation-name: treeAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration:4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes audioAnimate {
+    from,to{
+        opacity: 0.9;
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotateX(0);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1) rotate(15deg);
+        transform: scale(1.1) rotate(15deg);
+    }
+}
+@keyframes audioAnimate {
+    from,to{
+        opacity: 0.9;
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotateX(0);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1) rotate(15deg);
+        transform: scale(1.1) rotate(15deg);
+    }
+}
+.audioAnimate {
+    -webkit-animation-name: audioAnimate;
+    animation-name: audioAnimate;
+    -webkit-animation-duration:2s;
+    animation-duration:2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ballAnimate {
+    from,to{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+    }
+}
+@keyframes ballAnimate {
+    from,to{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+    }
+}
+.ballAnimate {
+    -webkit-animation-name: ballAnimate;
+    animation-name: ballAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration:4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes lineAnimate {
+    from,to{
+        opacity: 1;
+        -webkit-transform: scale(1) translateX(0) ;
+        transform: scale(1) translateX(0) ;
+    }
+    50% {
+        opacity: 0.4;
+        -webkit-transform: scale(1.01) translateX(0.1rem);
+        transform: scale(1.01) translateX(0.1rem)
+    }
+}
+@keyframes lineAnimate {
+    from,to{
+        opacity: 1;
+        -webkit-transform: scale(1) translateX(0) ;
+        transform: scale(1) translateX(0) ;
+    }
+    50% {
+        opacity: 0.4;
+        -webkit-transform: scale(1.01) translateX(0.1rem);
+        transform: scale(1.01) translateX(0.1rem)
+    }
+}
+
+.lineAnimate {
+    -webkit-animation-name: lineAnimate;
+    animation-name: lineAnimate;
+    -webkit-animation-duration: 6s;
+    animation-duration:6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}

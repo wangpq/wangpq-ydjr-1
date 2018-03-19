@@ -1,0 +1,262 @@
+﻿body{
+    background-color:#f4f4f4;
+}
+.prepayment{
+    padding: 1.44rem 0 0;
+    display:none;
+} 
+.prepayment .head{
+    padding: 0.8rem 0;
+    color:#3a3a3a;
+    font-size:0.38rem;
+    line-height:1.58;
+} 
+
+.prepayment .list-view{
+    background-color:#fff;
+    margin-top:0.2rem;
+    padding-top:0.28rem;
+    margin-bottom:0.2rem;
+}
+.prepayment .list-view h2{
+    padding-left: 0.22rem;
+    line-height: 1.2;
+    font-size: 0.38rem;
+    border-left: 3px solid #0aa3f3;
+    margin: 0 0.44rem 0.1rem;
+}
+.prepayment .list-view .bd{
+    border-radius:0.1rem;
+}
+.prepayment .list-view p{
+    padding:0.28rem 0;
+    display: -webkit-flex;
+    margin:0 0.72rem;
+    display: flex;
+    font-size:0.38rem; 
+    border-bottom:1px dashed #bfbfbf;
+}
+.prepayment .list-view p:last-of-type{
+    border-bottom:none;  
+}
+.prepayment .list-view p .name{
+    flex :1;
+    -webkit-flex :1;
+    color:#282828;
+    line-height: 1.28;
+}
+.prepayment .list-view p .val{
+    flex :2;
+    -webkit-flex :2;
+    color:#a09f9f;
+    line-height: 1.28;
+}
+
+.work dl{
+    width:100%;
+    padding:0.6rem 10%;
+    text-align: center;  
+    font-size:0.38rem;
+    margin-bottom:0.68rem;
+    background:#fff;
+}
+.work dt{
+    display: -webkit-flex;
+    display:flex;
+    margin-bottom:0.1rem;
+}
+.work dt span{
+    -webkit-flex :1;
+    flex :1;
+}
+.work dd{
+    display: -webkit-flex;
+    display:flex;
+}
+.work dd .m{
+    -webkit-flex :1;
+    flex :1;
+}
+.work dd .m span{
+    -webkit-flex :1;
+    flex :1;
+    color:#0ba4f4;
+    font-size:0.44rem;
+}
+.work dd .m>i{
+    display:inline-block;
+    width:0.8rem;
+    height:0.8rem;
+}
+.icon-prepayment-a{
+    background:url(../images/icon-prepayment-a.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-prepayment-b{
+    background:url(../images/icon-prepayment-b.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.work .tr{
+    text-align:center;
+    font-size:0.36rem;
+}
+.work .tr:first-of-type{
+    margin-bottom: 0.2rem;
+}
+.work .tr.money{
+    margin-bottom: 0.2rem;
+    padding:0 0.44rem;
+}
+.work .tr.money input{
+    text-align:center;
+    font-size:0.38rem;
+    background: #fff; 
+    padding: 0.28rem 0; 
+    box-shadow: 0 0 0.06rem 0.04rem #d8d8d8 inset;
+    width:100%;
+    border:1px solid #d8d8d8;
+    border-radius:0.04rem;
+}
+.work .tr.state{
+    text-align:right;
+    padding:0 0.44rem;
+    font-size:0.36rem;
+    color:#0ba4f4;
+    margin-bottom:0.8rem;
+}
+.work .tr.state .txt{
+    vertical-align: middle;
+    margin-right:0.1rem;
+}
+.icon-pre-state{
+    display:inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    vertical-align: middle;
+    background:url(../images/icon-pre-state.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.work .tr.m{
+    margin-bottom: 0.48rem;
+    display: -webkit-flex;
+    display:flex;
+}
+.work .tr.m .td:first-of-type{
+    -webkit-flex :2;
+    flex :2;
+}
+.work .tr.m .td:last-of-type{
+    -webkit-flex :1;
+    flex :1;
+}
+.work .tr:last-of-type{
+    padding-bottom:0.8rem;
+}
+
+
+.radio{
+    display: inline-block;
+    cursor:default;
+}
+.radio>i{
+    display: inline-block;
+    width:0.38rem;
+    height:0.38rem;
+    border-radius :0.19rem;
+    border: 1px solid #838383;
+    vertical-align: middle;
+    margin:0 0.1rem;
+    position: relative;
+    transition: all 0.4s;
+}
+.radio.checked>i{
+    border: none;
+    background: url(../images/radio-checked.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.radio>span{
+    vertical-align: middle;
+    font-size:0.38rem;
+}
+.payment-state-html,
+.authcode-html{
+    display: none;
+}
+.yd-pop-box .payment-state{
+   text-align:left;
+}
+.yd-pop-box .payment-state p{
+    line-height:1.28;
+    margin-bottom:0.2rem;
+}
+.yd-pop-box .payment-state p:last-of-type{
+    margin-bottom:0;
+}
+.yd-pop-box .payment-state p>b{
+    font-weight:normal;
+    color:#080808;
+}
+
+.yd-pop-box .authcode-box{
+    text-align:left;
+ }
+ .yd-pop-box .authcode-box p{
+     line-height:1.28;
+     margin-bottom:0.2rem;
+     text-align:center;
+ }
+ .yd-pop-box .authcode-box p:last-of-type{
+     margin-bottom:0;
+     text-align:center;
+ }
+.yd-pop-box .authcode-box p .txt{
+    vertical-align: middle; 
+    width:100%;
+}
+.yd-pop-box .authcode-box p input{
+    width: 2.2rem;
+    text-align: center;
+    padding: 0.12rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    box-shadow: 0 0 0.06rem 0.04rem #d8d8d8 inset;
+    border: 1px solid #d8d8d8;
+    font-size: 0.32rem;
+    line-height: 1;
+}
+.yd-pop-box .authcode-box p .btn{
+    display: inline-block;
+    text-align:center;
+    padding:0.14rem 0.2rem; 
+    background: #0ba4f4;
+    color:#fff;
+    border-radius : 0.08rem;
+    cursor:default;
+    font-size:0.32rem;
+    vertical-align: middle;
+    width:auto;
+}
+.yd-pop-box .authcode-box p .btn-time{
+    color:#0ba4f4;
+    background-color: #fff;
+}
+
+
+.btn-primary{
+    background-color: #0ba4f4;
+    border-radius:0.1rem;
+    color:#fff;
+    padding:0.35rem 0;
+    text-align: center;
+    font-size:0.44rem;
+    margin:0 0.44rem 0.4rem;
+    transition:background-color 0.3s;
+    cursor:pointer;
+}
+.btn-primary:active{
+    background-color: #0090db;
+}
+.btn-primary.disable{
+    background-color: #a8a8a8;
+    cursor:default;
+}

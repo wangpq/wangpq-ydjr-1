@@ -1,0 +1,27 @@
+﻿body{
+    background-color:#f4f4f4;
+}
+.records ul li{
+    padding:0.28rem 0.44rem;
+    border-bottom:1px solid #d4d4d4;
+}
+.records ul li:last-of-type{
+    border-bottom:none;
+}
+.records li .tr{
+    display: flex;
+    flex-direction: row;
+}
+.records li .tr .td{
+    flex :1;
+    font-size:0.38rem;
+}
+.records li .tr:first-of-type{
+    margin-bottom:0.12rem;
+}
+.records li .tr .td:first-of-type{
+    text-align: left;
+}
+.records li .tr .td:last-of-type{
+    text-align: right;
+}

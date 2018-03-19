@@ -1,0 +1,306 @@
+﻿body{
+    background-color:#fff;
+}
+header{
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 1.44rem;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    overflow:hidden;
+    z-index:1000;
+    border-bottom:1px solid #d2d2d2;
+}
+header a,
+header a:visited{
+    display: inline-block;
+    color:#fff;
+    position: relative;
+    height: 1.44rem;
+    line-height: 1.56rem;
+    font-size:0.5rem;
+}
+header a:active{
+  color:#4D78E7;
+}
+header a.back{
+    height: 1.44rem;
+    line-height: 1.44rem;
+    position: absolute;
+    width:1.5rem;
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+header a.back:after{
+    position: absolute;
+    left:0.55rem;;
+    top:50%;
+    content:'';
+    margin-left:0;
+    margin-top:-0.2rem;
+    width: 0.34rem!important;
+    height: 0.34rem!important;
+    display: inline-block;
+    border-color:#ff7452;
+    border-style: solid;
+    border-width: 0px 0px 2px 2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+header a:active:after{
+    border-color:#4D78E7;
+}
+header a.right{
+    float: right;
+}
+header .hd{
+    width: 90%;
+    margin:0 auto;
+    text-align: center;
+    color:#646363;
+    font-size:0.48rem;
+    height:100%;
+    line-height: 1.56rem;
+}
+header .text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: auto;
+    height: 1.44rem;
+    cursor: pointer;
+    background-size: 40% 40%;
+    color:#ff7452;
+    font-size: 0.38rem;
+    padding-right:0.44rem;
+    line-height:1.6rem;
+    font-weight:bold;
+}
+header .text.disable{
+   color:#ccc;
+   cursor:default;
+}
+.page{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    opacity: 0;
+}
+.page:first-of-type{
+    opacity: 1;
+}
+.yd-bd{
+    position: absolute;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-size:100% 100%;
+    padding-top: 1.44rem;
+    padding-bottom: 1.48rem;
+    overflow-x:hidden;
+    overflow-y:auto;
+    height:100%;
+}
+.hdNone header{
+    display:none;
+}
+.hdNone .yd-bd{
+    padding-top:0;
+}
+
+
+footer{
+    width: 100%;
+    height: 1.48rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1000;
+    border-top: 1px solid #eaeaea;
+    background-color: #fff;
+}
+footer ul{
+    width:100%;
+    height: 1.44rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+footer ul li{
+    -webkit-flex:1;
+    flex: 1;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+    text-align: center;
+    padding:0.2rem 0;
+    transition:background-color 0.3s;
+}
+footer ul li:active{
+    background-color: #f8f8f8;
+}
+footer ul li i{
+    width:0.6rem;
+    height:1rem;
+    display:block;
+    margin: 0 auto;
+}
+footer ul li span{
+    font-size:0.36rem;
+    color:#323232;
+    display:none;
+}
+
+.icon-home{
+    background: url(../images/icon-home-h.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.active .icon-home{
+    background: url(../images/icon-home-l.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.icon-inspect{
+    background: url(../images/icon-inspect-h.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.active .icon-inspect{
+    background: url(../images/icon-inspect-l.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.icon-contacts{
+    width:0.9rem;
+    background: url(../images/icon-contacts-h.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.active .icon-contacts{
+    background: url(../images/icon-contacts-l.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.icon-user{
+    width:0.4rem;
+    background: url(../images/icon-user-h.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.active .icon-user{
+    background: url(../images/icon-user-l.png) center center no-repeat ;
+    background-size: 100% 100%;
+}
+.active .text{
+    color:#f75d5d;
+}
+
+/*************************** toast start*******************/
+.toast {
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    width: 100%;
+     -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.toast .tip {
+    min-width: 6rem;
+    max-width: 80%;
+    color: #fff;
+    background: rgba( 0, 0, 0, 0.8);
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    display: inline-block;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 0.45rem;
+    line-height: 1.68;
+}
+.invisibile {
+    display: none;
+}
+/*************************** toast end*******************/
+
+
+
+/*************************** loading start *******************/
+.loading {
+    position: absolute;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index:9999;
+}
+.loading .bg{
+    position: absolute;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+}
+.loading .c{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+}
+.loading .c .body{
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    padding: 1.1rem 0.4rem;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+    width:4.4rem;
+    background-color:#fff;
+}
+.loading .c .body .img{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    background: url(../images/loading.gif) center center no-repeat;
+    background-size: 100% 100%;
+}
+.loading .c .body .text{
+    color: #323232;
+    text-align: center;
+    padding: 0.3rem 0 0;
+    font-size: 0.48rem;
+}
+.loading.hasText .c .body{
+    padding: 0.68rem 0.3rem;
+}
+.loading.hasText .c .body .text{
+    padding: 0.2rem 0 0;
+    line-height: 1;
+}
+/************************loading end*************************/

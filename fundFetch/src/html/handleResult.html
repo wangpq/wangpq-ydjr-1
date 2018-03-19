@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="贵州通公积金查询">
+<meta name="description" content="贵州通公积金查询">
+<meta name="author" content="Wangpq">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- build:handleResultCss -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/handleResult.css">
+<!-- endbuild -->
+<!-- build:flexible -->
+<script src="../js/flexible.js"></script>
+<!-- endbuild -->
+<!-- build:urlconfig -->
+<script src="../js/urlconfig.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+
+<section class="page active">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">办理结果</div>
+	</header>
+	<div class="yd-bd handle-result">
+		<div class="head">
+			<div class="ok">
+				<p><span class="icon"></span></p>
+				<p>公积金还贷业务办理成功</p>
+				<p>此次共提前还款<span id="loanPrincipleSum"></span>元，贷款本金余额还剩<span id="loanPrincipleBalance"></span>元</p>
+			</div>
+			<div class="no">
+				<p><span class="icon"></span></p>
+				<p>很抱歉，公积金还贷业务</p>
+				<p> 办理失败</p>
+			</div>
+		</div>
+		<div class="body">
+			<div class="error-body">
+				<img src="../images/icon-fund-people.png" alt="详情请咨询公积金中心 客服电话：0851-12329">
+				<p>详情请咨询公积金中心<br>客服电话：0851-12329</p>
+			</div>
+			<div class="success-body">
+				<div class="tip-head">您的新还款计划如下，请您按时足额进行还款，避免造成征信不良。</div>
+				<div class="list-view">
+	                <!--
+					<h2>个人还款计划书</h2>
+					<div class="bd">
+					<p>
+						<span class="name">姓名</span>
+						<span class="val">张某某</span>
+					</p>
+					<p>
+						<span class="name">身份证</span>
+						<span class="val">522112245654556</span>
+					</p>
+					<p>
+						<span class="name">贷款账号</span>
+						<span class="val">54556</span>
+					</p>
+					<p>
+						<span class="name">放款日期</span>
+						<span class="val">2014-09-18</span>
+					</p>
+					<p>
+						<span class="name">贷款金额</span>
+						<span class="val">31022.00元</span>
+					</p>
+					<p>
+						<span class="name">结束日期</span>
+						<span class="val">2018-09-10</span>
+					</p>
+					</div>
+		            -->
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>还款年月</th>
+							<th>还款日期</th>
+							<th>应还金额</th>
+							<th>本金余额</th>
+						</tr>
+					</thead>
+					<tbody>
+					    <!--
+						<tr>
+							<td>1</td>
+							<td>2017/10</td>
+							<td>2017.10.16</td>
+							<td>25000.00</td>
+							<td>32111.10</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2017/10</td>
+							<td>2017.10.16</td>
+							<td>25000.00</td>
+							<td>32111.10</td>
+						</tr>
+			            -->
+					</tbody>
+				</table>
+				<div class="btn btn-primary" id="btnSure">确认</div>
+		    </div>
+		</div>
+	</div>
+</section>
+
+<!-- build:handleResultJs -->
+<script src="../js/fastclick.js"></script>
+<script src="../js/query.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/handleResult.js"></script>
+<!-- endbuild -->
+</body>
+</html>

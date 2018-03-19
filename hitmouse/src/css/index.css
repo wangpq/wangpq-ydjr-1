@@ -1,0 +1,936 @@
+﻿html, body{
+    height:100%;
+}
+.download{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    height:1.44rem;
+    background:rgba(255,0,0,0.68);
+    display:none;
+}
+.download .c{
+    padding-left:0.4rem;
+    color:#f8f8f8;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:table;
+}
+.download .c a{
+    background-color: #fff;
+    padding: 0.16rem 0;
+    border-radius: 0.8rem;
+    color: #DD472F;
+    font-size: 0.32rem;
+    margin-right: 0.6rem;
+    display: inline-block;
+    text-align: center;
+    width:2.2rem;
+}
+.download .c .text.m{
+    font-size:0.34rem;
+}
+.download .c  .m{
+    display:table-cell;
+    vertical-align: middle;
+}
+.download .c  .m:last-child{
+    text-align:right;
+    position: relative;
+}
+.download .c  .m:first-child{
+    text-align:left;
+}
+.download .c  .m:last-child::after,
+.download .c  .m:last-child:after{
+    position: absolute;
+    right:0;
+    top:-1px;
+    width:0.6rem;
+    height:0.6rem;
+    content:"×";
+    background:#fff;
+    color:#000;
+    text-align: right;
+    line-height:0.4rem;
+    font-size:0.5rem;
+    border-bottom-left-radius: 0.6rem;
+}
+.download .c .close{
+    font-size:0.6rem;
+    cursor:pointer;
+    position: absolute;
+    right:0;
+    top:0;
+    width:0.6rem;
+    height:0.6rem;
+    z-index:100;
+}
+#one header{
+    background-color: transparent;
+}
+#one header a.back:after{
+    border-color: #fff;
+}
+#one header .hd{
+    color: #fff;
+}
+#one .yd-bd{
+    padding-top:0;
+}
+#one .yd-bd .hd{
+    background-color:  #406cac;
+    position: relative;
+    padding-top:1.44rem;
+    overflow:hidden;
+}
+#one .yd-bd .hd .tt{
+    padding-top:1.4rem;
+}
+#one .yd-bd .hd img{
+    display:block;
+    width:100%;
+    overflow:hidden;
+}
+#one .yd-bd .hd .t{
+    height:2rem;
+    position: absolute;
+    left:0;
+    right:0;
+    width:100%;
+}
+#one .yd-bd .hd .snow{
+    display: block;
+    background : url(../images/snow.png) center center no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    opacity:0.88;
+    -webkit-animation-name: snowAnimate;
+    animation-name: snowAnimate;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+#one .yd-bd .hd>canvas{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:1.44rem;
+    bottom:0;
+}
+@-webkit-keyframes yunAnimate{
+    from{
+        transform: scale(0.96);
+    }
+    50%{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.96);
+    }
+}
+
+#one .yd-bd .hd .t .rank{
+    display: block;
+    width:3rem;
+    height:2rem;
+    background : url(../images/rank.png) center center no-repeat;
+    background-size:100% auto;
+    position: absolute;
+    right:20%;
+    top:-30%;
+    text-align:center;
+    color:#ab9548;
+    font-weight:bold;
+    font-size:0.28rem;
+    padding:0.9rem 0;
+    -webkit-animation-name: yunAnimate;
+    animation-name: yunAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+#one .yd-bd .hd .t .integrate{
+    display: block;
+    width:2.2rem;
+    height:1.2rem;
+    background : url(../images/integrate.png) center center no-repeat;
+    background-size:100% auto;
+    position: absolute;
+    left:10%;
+    top:40%;
+    text-align:center;
+    color:#ab9548;
+    font-weight:bold;
+    font-size:0.28rem;
+    padding:0.45rem 0;
+    -webkit-animation-name: yunAnimate;
+    animation-name: yunAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+#one .yd-bd .hd .t .score{
+    display: block;
+    width:2.4rem;
+    height:1.2rem;
+    background : url(../images/integrate.png) center center no-repeat;
+    background-size:100% auto;
+    position: absolute;
+    left:30%;
+    top:90%;
+    text-align:center;
+    color:#ab9548;
+    font-weight:bold;
+    font-size:0.28rem;
+    padding:0.45rem 0;
+    -webkit-animation-name: yunAnimate;
+    animation-name: yunAnimate;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+#one .yd-bd .hd .bot{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:40%;
+}
+#one .yd-bd .hd .b{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+#one .yd-bd .hd .b::after{
+    position: absolute;
+    left:0;
+    right:0;
+    content:"";
+    bottom:-0.05rem;
+    height:0.2rem;
+    background-color: #e6ecf4;
+}
+
+@-webkit-keyframes hammerStartInAnimate {
+    from{
+        transform: scale(0) translate(8rem,-8rem);
+    }
+    to{
+        transform: scale(1) translate(0,0);
+    }
+}
+@keyframes hammerStartInAnimate {
+    from{
+        transform: scale(0) translate(10rem,-8rem);
+    }
+    to{
+        transform: scale(1) translate(0,0);
+    }
+}
+.hammerStartIn{
+    -webkit-animation-name: hammerStartInAnimate;
+    animation-name: hammerStartInAnimate;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes hammerStartOutAnimate {
+    from{
+        transform: scale(1) translate(0,0);
+    }
+    to{
+        transform: scale(0) translate(8rem,-8rem);
+    }
+}
+@keyframes hammerStartOutAnimate {
+    from{
+        transform: scale(1) translate(0,0);
+    }
+    to{
+        transform: scale(0) translate(8rem,-8rem);
+    }
+}
+.hammerStartOut{
+    -webkit-animation-name: hammerStartOutAnimate;
+    animation-name: hammerStartOutAnimate;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#one .yd-bd .hd .b .regular{
+    position: absolute;
+    left: 9%;
+    top: 35%;
+    width: 20%;
+    height: 40%;
+    overflow: hidden;
+    text-indent: -20rem;
+    z-index:99;
+}
+#one .yd-bd .hd .b .music{
+    position: absolute;
+    left: 90%;
+    top: 45%;
+    width: 20%;
+    height: 30%;
+    overflow: hidden;
+    z-index:99;
+}
+#one .yd-bd .bd{
+    background: #e6ecf4 url(../images/grassland.png) top center repeat;
+    background-size: 100% 100%;
+    padding-top:0.8rem;
+    position: relative;
+}
+#one .yd-bd .bd .score{
+    position: absolute;
+    left:50%;
+    margin-left:-1rem;
+    top:-1rem;
+    width:2rem;
+    height:2rem;
+    background:url(../images/myscore.png) top center no-repeat;
+    background-size:auto 100%;
+}
+#one .yd-bd .bd .score>span{
+    display:block;
+    height:0.34rem;
+    line-height: 1;
+    margin-top:0.58rem;
+    width:100%;
+    text-align:center;
+    font-weight: bold;
+    font-size:0.34rem;
+    color:#d2433a;
+}
+#one .yd-bd .bd .start{
+    position: absolute;
+    left:0;
+    top:-10%;
+    right:10%;
+    height:2.5rem;
+    display: none;
+    z-index:98;
+}
+#one .yd-bd .bd .start img{
+    height:100%;
+    margin:0 auto;
+    display: block;
+    width:auto;
+}
+
+.houses{
+    padding-bottom:0.8rem;
+}
+.houses li{
+    display: -webkit-flex;
+    display: flex;
+   -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.houses li .td{
+    -webkit-flex:1;
+    flex: 1;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.house{
+    width: 2.5rem;
+    margin:0 auto;
+    position: relative;
+    height:3.6rem;
+    padding-top:1.6rem;
+    overflow:hidden;
+}
+.house img{
+   display: block;
+   margin:0 auto;
+}
+.house .t{
+    position: relative;
+    z-index:2;
+    height:0.24rem;
+    background : url(../images/burrowTop.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.house .b{
+    position: relative;
+    top:0;
+    z-index:4;
+    height:1.8rem;
+    background : #e6ecf4 url(../images/burrowBot.png) center top no-repeat;
+    background-size: 2rem auto;
+}
+.house .mouse{
+    display:block;
+    position: absolute;
+    z-index :3;
+    left:50%;
+    top:50%;
+    margin-left:-0.76rem;
+    width:1.3rem;
+    height:1.4rem;
+    background : url(../images/gopher.png) center top no-repeat;
+    background-size: 100% auto ;
+}
+.house .hammer{
+    display:block;
+    position: absolute;
+    z-index :1;
+    left:70%;
+    top:8%;
+    margin-left:-0.8rem;
+    width:1.4rem;
+    height:1rem;
+    background : url(../images/hammer.png) center center no-repeat;
+    background-size: auto 100%;
+    display:none;
+}
+.house.hit .hammer{
+    display:block;
+}
+.house.landmine .mouse{
+    position: absolute;
+    z-index :2;
+    left:50%;
+    top:50%;
+    width:1.6rem;
+    height:1.2rem;
+    margin-left:-0.58rem;
+    background : url(../images/landmine.png) center center no-repeat;
+    background-size: auto 100%;
+}
+
+@-webkit-keyframes fenAnimate{
+    from,to{
+        transform: scale(0);
+    }
+    15%,85%{
+        transform: scale(1);
+    }
+}
+@keyframes fenAnimate{
+    from,to{
+        transform: scale(0);
+    }
+    15%,85%{
+        transform: scale(1);
+    }
+}
+
+.house .fen{
+    display:block;
+    position: absolute;
+    z-index :8;
+    left:0;
+    right:0;
+    text-align:center;
+    top:-2%;
+    margin-left:0;
+    width:100%;
+    height:1rem;
+    color:#e74034;
+    font-weight:normal;
+    font-size:0.48rem;
+    display: none;
+    -webkit-animation-name: fenAnimate;
+    animation-name: fenAnimate;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.house.generate.hit .fen{
+    display: block;
+}
+.house.generate.hit .mouse{
+    background : url(../images/gopherHit.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.house.landmine.hit .mouse{
+    background : url(../images/landmineHit.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.house .paopao{
+    position: absolute;
+    height:2rem;
+    z-index:8;
+}
+.house.p1,
+.house.p2{
+    overflow:inherit;
+}
+.house.p1 .paopao{
+    left:-1.8rem;
+    right:0;
+    top:-1rem;
+    background : url(../images/qiufangguo.png) left center no-repeat;
+    background-size: auto 100%;
+}
+.house.p2 .paopao{
+    top:-1rem;
+    right:-1.7rem;
+    width:3rem;
+    background : url(../images/qiuxiuxi.png) left center no-repeat;
+    background-size: auto 100%;
+}
+.houses.all .mouse,
+.houses.share .mouse{
+    top: 15%;
+    background: url(../images/gopher.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.houses.all .paopao{
+    -webkit-animation-name: paoAnimate;
+    animation-name: paoAnimate;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes paoAnimate {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes paoAnimate {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes hit{
+    from,50%,to{
+        transform: rotate(0deg) translateY(0);
+    }
+    25%,75%{
+        transform: rotate(25deg) translateY(-30%);
+    }
+}
+@keyframes hit{
+    from,50%,to{
+        transform: rotate(0deg) translateY(0);
+    }
+    25%,75%{
+        transform: rotate(25deg) translateY(-30%);
+    }
+}
+.house.hit .hammer{
+    -webkit-animation-name: hit;
+    animation-name: hit;
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.rank-prize header{
+    background-color:#3d69a9;
+}
+.rank-prize header .hd{
+    color:#fff;
+}
+.rank-prize header a.back:after{
+    border-color: #fff;
+}
+.rank-prize .yd-bd{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.rank-prize .yd-bd .list{
+    -webkit-flex :1;
+    flex:1;
+}
+
+.rank-prize .list{
+    width:100%;
+    margin:0 auto;
+}
+.rank-prize .list .hd{
+    background-color:#3d69a9;
+}
+.rank-prize .list .hd img{
+    display:block;
+    width:100%;
+}
+.rank-prize .list .bd h2{
+    color:#ff5400;
+    text-align:center;
+    font-size:0.4rem;
+    padding:0.2rem 0;
+    margin-top:0.3rem;
+    font-weight: bold;
+}
+.rank-prize .list .bd .th{
+    border-top:1px solid #6cb4c8;
+    border-bottom:1px solid #6cb4c8;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding:0.2rem 0;
+    background-color:#daf0d9;
+    overflow:hidden;
+}
+.rank-prize .list .bd .th span{
+    flex: 1;
+    justify-content: flex-start;
+    text-align:center;
+    color:#212324;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+    font-size:0.26rem;
+}
+.rank-prize .list .bd .th span:nth-child(1){
+    flex: 0.8;
+}
+.rank-prize .list .bd .th span:nth-child(2){
+    flex: 0.4;
+}
+.rank-prize .list .bd .th span:nth-child(3){
+    flex:0.4;
+}
+.rank-prize .list .bd .th span:nth-child(4){
+    flex:0.5;
+}
+#rankPage .list .bd .th span:nth-child(1){
+    flex: 1;
+}
+#rankPage  .list .bd .th span:nth-child(2){
+    flex: 2;
+}
+#rankPage  .list .bd .th span:nth-child(3){
+    flex:1;
+}
+.rank-prize .list .bd .body{
+    color: #212324;
+    padding:0 0.2rem;
+    min-height:1.8rem;
+    background-color:#f5f8fb;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.rank-prize .list .bd .body li{
+    line-height: 1;
+    padding:0.38rem 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    border-bottom:1px solid #d9d9d9;
+}
+.rank-prize .list .bd .body li span{
+   -webkit-flex:1;
+    flex: 1;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align:center;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.rank-prize .list .bd .body li span:nth-child(1){
+    flex: 0.8;
+}
+.rank-prize .list .bd .body li span:nth-child(2){
+    flex: 0.4;
+}
+.rank-prize .list .bd .body li span:nth-child(3){
+    flex:0.4;
+}
+.rank-prize .list .bd .body li span:nth-child(4){
+    flex:0.5;
+}
+#rankPage .list .bd .body li span:nth-child(1){
+    flex: 1;
+}
+#rankPage .list .bd .body li span:nth-child(2){
+    flex: 2;
+}
+#rankPage .list .bd .body li span:nth-child(3){
+    flex:1;
+}
+.rank-prize .result{
+    display: none;
+}
+.rank-prize .result img{
+    display:block;
+    width:60%;
+    margin:0 auto;
+}
+
+
+
+.img-box .bd,
+.img-box [wp="wpdom"]{
+    width:100%;
+    background-color: transparent;
+    border:transparent;
+}
+.img-box .content img{
+    display: block;
+    margin:0 auto;
+    max-width:80%;
+}
+.img-box .btn{
+    width: 60%;
+    display:block;
+    margin:0 auto;
+}
+.img-box .btn>.ok{
+    width: 100%;
+    display: block;
+    background: #95531b;
+    padding: 0.1rem 0;
+    margin: 0 auto;
+    border-radius: 0.06rem;
+    cursor: pointer;
+    color:#fff;
+}
+
+
+@-webkit-keyframes resInAnimate{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes resInAnimate{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.resIn{
+    -webkit-animation-name: resInAnimate;
+    animation-name: resInAnimate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes resOutAnimate{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+@keyframes resOutAnimate{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+.resOut{
+    -webkit-animation-name: resOutAnimate;
+    animation-name: resOutAnimate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.txt-box{
+    background-color: rgba(0,0,0,0.2);
+}
+.txt-box .bd,
+.txt-box [wp="wpdom"]{
+    width:80%;
+    max-width: 8.8rem;
+    position: relative;
+}
+.txt-box [wp="wpdom"]::before{
+    top:-1.4rem;
+    left:0.4rem;
+    width:2rem;
+    height:2rem;
+    background: url(../images/reqularImg.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.txt-box [wp="wpdom"] .close{
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    right:0.2rem;
+    top:0.2rem;
+    background: url(../images/close.png) center center no-repeat;
+    background-size: 100% 100%;
+    display:block;
+}
+.txt-box .body dt{
+    padding:0.6rem 0;
+}
+.txt-box .body dt img{
+    margin:0 auto;
+    display: block;
+    width:40%;
+}
+.txt-box .body dd{
+    max-height:8rem;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.txt-box .body dd img{
+    margin:0 atuo;
+    display: block;
+    width:100%;
+}
+.txt-box .body dd h4{
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: #4f1716;
+    font-family: "黑体";
+    line-height: 1.28;
+    margin-bottom:0.2rem;
+}
+.txt-box .body dd p{
+    font-size: 0.3rem;
+    color: #4f1716;
+    font-family: "黑体";
+    line-height: 1.28;
+    margin-bottom:0.2rem;
+}
+.txt-box .btn{
+    display:none;
+}
+
+.alert .bd,
+.alert [wp="wpdom"]{
+    width:80%;
+    max-width: 8.8rem;
+}
+.alert .bd,
+.alert [wp="wpdom"]{
+    background-color: #f7f0ba;
+    border:2px solid #69a301;
+}
+.alert .content .body img{
+    display: block;
+    width:100%;
+    margin:0 auto;
+}
+.alert .btn{
+    padding-bottom:0.28rem;
+}
+.alert .btn .ok{
+    text-indent: -20rem;
+    display: block;
+    margin:0 auto;
+    border-radius:0.12rem;
+    background: #ee594d url(../images/btnok.png) center center no-repeat;
+    background-size: auto 50%;
+    color:#fff;
+    text-align:center;
+    padding: 0.12rem 0.68rem;
+    font-size:0.28rem;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+
+
+@-webkit-keyframes snowAnimate {
+    from{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+@keyframes snowAnimate {
+    from{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+.snowAnimate{
+    -webkit-animation-name: snowAnimate;
+    animation-name: snowAnimate;
+    -webkit-animation-duration:6s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.count-down{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:4.8rem;
+    height:3.2rem;
+    margin-left:-2.4rem;
+    margin-top:-1.6rem;
+    z-index:999;
+    display: none;
+}
+.count-down>.bd{
+    display: -webkit-flex;
+    display: flex;
+    height:100%;
+}
+.count-down>.bd>.txt{
+    margin:0 auto;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+    font-size: 3rem;
+    color:#ffe933;
+}
+
+.regular-html{
+    display:none;
+}

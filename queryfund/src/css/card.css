@@ -1,0 +1,193 @@
+﻿body {
+	background-color: #fff
+}
+
+header {
+	width: 100%;
+	background-color: #f8f8f8;
+	height: 1.44rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: 1000
+}
+
+header a,header a:visited {
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	height: 1.44rem;
+	line-height: 1.44rem;
+	font-size: .5rem
+}
+
+header a:active {
+	color: #4d78e7
+}
+
+header a.back {
+	height: 1.44rem;
+	line-height: 1.44rem;
+	position: absolute;
+	width: 1.5rem;
+	top: 0;
+	left: 0;
+	cursor: pointer
+}
+
+header a.back:after {
+	position: absolute;
+	left: .55rem;
+	top: 50%;
+	content: '';
+	margin-left: 0;
+	margin-top: -.2rem;
+	width: .34rem!important;
+	height: .34rem!important;
+	display: inline-block;
+	border-color: #ff7452;
+	border-style: solid;
+	border-width: 0 0 2px 2px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+header a:active:after {
+	border-color: #4d78e7
+}
+
+header a.right {
+	float: right
+}
+
+header .hd {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	color: #646363;
+	font-size: .46rem;
+	height: 100%;
+	line-height: 1.6rem
+}
+
+header a.ask {
+	width: 1.44rem;
+	height: 1.44rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background: transparent url(../images/icon-ask.png) center center no-repeat;
+	background-size: 40% 40%;
+	display: none
+}
+
+.yd-bd {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: 100% 100%;
+	padding-top: 1.44rem;
+	overflow: auto;
+	height: 100%
+}
+
+.headerNone .yd-bd {
+	padding-top: 0
+}
+
+.headerNone header {
+	display: none
+}
+
+.card-box {
+	margin: .6rem .68rem;
+	position: relative
+}
+
+.card-box>img {
+	width: 100%
+}
+
+.card-box>div {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0
+}
+
+.card-box .name {
+	top: 18%;
+	font-size: .4rem;
+	color: #4b4a4a
+}
+
+.card-box .money {
+	top: 38%;
+	font-size: .68rem;
+	font-weight: 400;
+	color: #4b4a4a
+}
+
+.card-box .dw {
+	top: 54%;
+	text-align: center;
+	font-size: .28rem;
+	color: #4b4a4a
+}
+
+.card-box .num {
+	text-align: right;
+	top: 70%;
+	padding-right: .7rem;
+	font-size: .38rem;
+	color: #4b4a4a
+}
+
+.card-box .info {
+	top: 85%;
+	font-size: .38rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.card-box .info .col:first-of-type {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.card-box .info .col:last-of-type {
+	-webkit-box-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+	text-align: right;
+	padding-right: .7rem
+}
+
+.card-box .info .date {
+	color: #4b4a4a
+}
+
+.card-box .info .text {
+	color: #030c12
+}
+
+.icon-gjj {
+	width: .8rem;
+	height: .4rem;
+	display: inline-block;
+	background: url(../images/icon-gjj.png) center center no-repeat;
+	background-size: 100% auto;
+	vertical-align: middle
+}

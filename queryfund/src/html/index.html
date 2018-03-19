@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>贵州通公积金查询</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="贵州通公积金查询">
+<meta name="description" content="贵州通公积金查询">
+<meta name="author" content="Wangpq">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- build:indexCss -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/index.css">
+<!-- endbuild -->
+<!-- build:flexibleJs -->
+<script src="../js/flexible.js"></script>
+<!-- endbuild -->
+<!-- build:urlconfigJs -->
+<script src="../js/urlconfig.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+
+<section class="page" id="searchPage">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">公积金查询</div>
+	</header>
+	<div class="yd-bd">
+		<ul class="form">
+			<li class="w">
+				<input type="text" id="idNumber" placeholder="请输入身份证号">
+			</li>
+			<li class="w">
+				<input type="password" id="password" placeholder="请输入密码">
+			</li>
+		</ul>
+		<div class="btn btn-primary" id="btnSearch">查询</div>
+		<div class="tips">
+		温馨提示：<br />
+		密码默认为公积金账号后六位
+		</div>
+	</div>
+</section>
+
+<section class="page" id="resultPage">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd"></div>
+	</header>
+	<div class="yd-bd">
+		<dl class="desc">
+			<dt>
+				<div class="money"></div>
+				<div class="text">公积金金额/正常缴纳</div>
+				<div class="tips"></div>
+				<div class="date"></div>
+				<div class="info" id="info">
+					<div class="icon-refresh" title="点击刷新"></div>
+					<div class="result"></div>
+				</div>
+			</dt>
+			<dd>
+				<div class="w" id="gjjBoby">
+					<p>
+						<span class="key">月缴纳额：</span>
+						<span class="value" id="monthbalance"></span>
+					</p>
+					<p>
+						<span class="key">单位缴存款：</span>
+						<span class="value" id="companybalance"></span>
+					</p>
+					<p>
+						<span class="key">工资基数：</span>
+						<span class="value" id="wagebase"></span>
+					</p>
+					<p>
+						<span class="key">公积金号：</span>
+						<span class="value" id="personaccount"> </span>
+					</p>
+					<p>
+						<span class="key">卡号：</span>
+						<span class="value" id="pan"> </span>
+					</p>
+					<p>
+						<span class="key">身份证号：</span>
+						<span class="value" id="idNum"></span>
+					</p>
+					<p>
+						<span class="key">手机号</span>
+						<span class="value" id="telphone"></span>
+					</p>
+					<p>
+						<span class="key">开户日期：</span>
+						<span class="value" id="opentDate"></span>
+					</p>
+					<p>
+						<span class="key">初缴日期：</span>
+						<span class="value" id="startDate"></span>
+					</p>
+					<p>
+						<span class="key">缴至年月：</span>
+						<span class="value" id="lastDate"></span>
+					</p>
+					<p>
+						<span class="key">是否冻结：</span>
+						<span class="value" id="frozen"></span>
+					</p>
+					<p>
+						<span class="key">是否办理公积金委扣：</span>
+						<span class="value" id="transactentrustcut"></span>
+					</p>
+					<p>
+						<span class="key">是否办理商代委扣：</span>
+						<span class="value" id="transactbusinesscut"></span>
+					</p>
+					<p>
+						<span class="key">是否贷款：</span>
+						<span class="value" id="loanflg"></span>
+					</p>
+					<!--
+					<p>
+						<span class="key">单位法人：</span>
+						<span class="value" id="snlegalperson"></span>
+					</p>
+					-->
+					<p>
+						<span class="key">单位经办人：</span>
+						<span class="value" id="operator"></span>
+					</p>
+					<p>
+						<span class="key">单位账号：</span>
+						<span class="value" id="companyaccount"></span>
+					</p>
+					<p>
+						<span class="key">单位销户日期：</span>
+						<span class="value" id="hjspxhrq"></span>
+					</p>
+					<p>
+						<span class="key">单位联系电话：</span>
+						<span class="value" id="sntel"></span>
+					</p>
+					<!--
+					<p>
+						<span class="key">所属管理部：</span>
+						<span class="value" id="orgname"></span>
+					</p>
+					-->
+					<p>
+						<span class="key">单位账户冻结状态：</span>
+						<span class="value" id="zt"></span>
+					</p>
+					<p>
+						<span class="key">单位地址：</span>
+						<span class="value" id="snaddress"></span>
+					</p>
+				</div>
+				<div class="btn-wrap"><span  class="btn-arrow" id="btnArrow"></span></div>
+			</dd>
+		</dl>
+
+		<ul class="list-view">
+			<li class="disable">
+				<div class="col">
+					<i class="icon-list"></i>
+				</div>
+				<div class="col">
+					<span class="t">缴纳明细</span>
+					<span class="b">历年缴纳收支明细</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<div id="loading" class="loading hasText invisible">
+	<div class="c">
+		<div class="body">
+			<div class="img"></div>
+			<div class="text" style="display:block">正在加载中...</div>
+		</div>
+	</div>
+	<div class="bg"></div>
+</div>
+
+<section class="yd-pop-box" data-popbox="true">
+    <div class="c">
+        <div class="bd" wp="wpdom">
+            <div class="close"></div>
+            <div class="content">
+                <div class="text">
+                    <div class="authcode-box">
+                        <div class="p">验证码</div>
+						<div class="p">
+                            <div class="authcode" id="authcode"></div>
+						</div>
+						<div class="p">
+							看不清？点击图片更新验证码
+						</div>
+						<div class="p">
+							<input type="text" placeholder="请输入图示验证码" id="writecode">
+						</div>
+					</div>
+                </div>
+                <div class="btn">
+                    <div class="col">
+                        <span class="no">取消</span>
+                    </div>
+                    <div class="col">
+                        <span class="ok">立即刷新</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="yd-pop-box" data-alert="true" id="alert">
+    <div class="c">
+        <div class="bd" wp="wpdom">
+            <div class="close"></div>
+            <div class="content">
+                <div class="text">网络修复中，本功能无法使用！</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:indexJs -->
+<script src="../js/fastclick.js"></script>
+<script src="../js/reqwest.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/gztUtil.js"></script>
+<script src="../js/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>

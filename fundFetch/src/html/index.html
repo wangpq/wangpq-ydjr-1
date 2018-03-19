@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="贵州通公积金查询">
+<meta name="description" content="贵州通公积金查询">
+<meta name="author" content="Wangpq">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- build:indexCss -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/index.css">
+<!-- endbuild -->
+<!-- build:flexible -->
+<script src="../js/flexible.js"></script>
+<!-- endbuild -->
+<!-- build:urlconfig -->
+<script src="../js/urlconfig.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+
+<!--loading 动画开始-->
+<div class="loading hasText" id="loading">
+    <div class="c">
+        <div class="body">
+            <div class="img"></div>
+            <div class="text">正在加载中...</div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</div>
+<!--loading 动画结束-->
+
+<!-- 个人声明页面 -->
+<section class="page" id="statementPage">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">个人声明</div>
+	</header>
+	<div class="yd-bd personal-box">
+		<div class="content">
+			<p>1、本次申请使用住房公积金账户余额用于提前偿还本人的公积金贷款本金余额，为本人真实意愿。</p>
+		    <p>2、本人保证所填写的信息和提供的图像均完整、真实、有效，无任何与事实不符的情况，如存在虚假申报或漏报行为，本人愿意承担由此产生的相应责任，并同意将本人的不良记录记入个人征信系统。</p>
+		</div>
+       <div class="action">
+			<div class="agreement">
+			    <i></i><span class="txt">本人已认真阅读上述声明并同意上述声明内容。</span>
+			</div>
+			<div class="btn btn-primary disable" id="btnResure">确认</div>
+	   </div>
+	</div>
+</section>
+
+<!-- 登录页面 -->
+<section class="page" id="loginPage">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">登录</div>
+	</header>
+	<div class="yd-bd login-box">
+		<h2><span class="fund-icon"></span></h2>
+		<ul class="form">
+			<li class="w">
+				<label for="userName">姓名</label>
+				<input type="text" name="userName" id="userName" placeholder="请输入姓名">
+			</li>
+			<li class="w">
+				<label for="idNumber">身份证号</label>
+				<input type="text" name="idNumber" id="idNumber" placeholder="请输入身份证号">
+			</li>
+			<li class="w">
+				<label for="userPass">公积金密码</label>
+				<input type="password" name="userPass" id="userPass" placeholder="请输入公积金密码">
+			</li>
+		</ul>
+		<div class="reset-pass"><span onclick="window.location.href='resetPass.html'">重置密码</span></div>
+		<div class="btn btn-primary disable" id="btnLogin">登录</div>
+		<div class="agreement">
+		   <i class="checked"></i><span class="txt">点击登录表示您已经同意</span><span class="xy"  onclick="window.location.href='protocol.html'">《使用协议》</span>
+		</div>
+
+		<div class="foot">
+			<p>该服务由贵阳市住房公积金管理中心提供</p>
+			<p><span>咨询投诉电话：</span><a href="tel://085112329">0851-12329</a></p>
+		</div>
+	</div>
+</section>
+
+<!-- 认证失败展示页面 -->
+<section class="page" id="rzPage">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">公积金提取</div>
+	</header>
+	<div class="yd-bd rz-box">
+		<p>实名认证失败，是否重新认证？</p>
+		<div class="p">
+			<div class="m">
+			    <span class="btn btn-primary" id="btnReAuth">重新认证</span>
+			</div>
+			<div class="m">
+			    <span class="btn btn-primary" id="btnNoAuth">暂不认证</span>
+			</div>
+		</p>
+	</div>
+</section>
+
+<!-- 自定义对话框 -->
+<section class="yd-pop-box" data-dialog="true">
+	<div class="c">
+		<div class="bd" wp="wpdom">
+			<div class="close"></div>
+			<div class="content">
+				<div class="body">
+					<div class="head"></div>
+					<div class="text"></div>
+				</div>
+				<div class="btn">
+					<div class="col">
+						<span class="ok">我知道了</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- build:indexJs -->
+<script src="../js/fastclick.js"></script>
+<script src="../js/query.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/gztUtil.js"></script>
+<script src="../js/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>

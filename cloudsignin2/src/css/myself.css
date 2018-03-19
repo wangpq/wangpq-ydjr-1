@@ -1,0 +1,218 @@
+﻿header{
+    background-color: #271c6b;
+    border-bottom: none;
+}
+header a.back:after {
+    border-color: #fff;
+}
+header .hd{
+    color:#fff;
+}
+.yd-bd{
+    padding-top:0;
+}
+.show-set{
+    padding-top:2rem;
+}
+.show-set img{
+    display:block;
+    width:1.7rem;
+    height:1.7rem;
+    border-radius:0.85rem;
+    margin:0 auto 0.15rem;
+}
+
+.show-set .tel,
+.show-set .name,
+.show-set .company{
+    font-size:0.38rem;
+    color:#fff;
+    display:block;
+    text-align: center;
+}
+.show-set .name{
+   margin-bottom:0.1rem;
+}
+
+.show-set .tel{
+   margin-bottom:0.4rem;
+}
+
+.show-set{
+    height:8.4rem;
+    background:  url(../images/home_slider_01.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.do{
+    display: -webkit-flex;
+    display: flex;
+   -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.do .m{
+   -webkit-flex:1;
+    flex: 1;
+    padding:1.6rem 0;
+}
+.do .m>.icon{
+    display:block;
+    text-align: center;
+}
+.do .m>.icon i{
+    display:block;
+    width:1.76rem;
+    height:1.76rem;
+    border-radius:0.88rem;
+    margin:0 auto 0.22rem;  
+    transition: background-color 0.3s;
+}
+.do .m:first-child .icon i{
+    background: #6fbc83 url(../images/icon-frends.png) center center no-repeat;
+    background-size: 50% 50%;
+}
+.do .m:first-child .icon:active i{
+    background-color:  #3bb95c;
+}
+.do .m:last-child .icon i{
+    background: #47a2ff url(../images/icon-folder.png) center center no-repeat;
+    background-size: 50% 50%;
+}
+.do .m:last-child .icon:active i{
+    background-color: #2691fe;
+}
+.do .m .icon span{
+    font-size:0.4rem;
+    color:#323232;
+}
+.versions{
+    color:#333;text-align:center;font-size:0.4rem;margin-top:0rem; 
+}
+
+
+.yd-pop-box{
+    position: absolute;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index:9999;
+    background-color:rgba(0,0,0,0.4);
+    display: none;
+}
+.yd-pop-box .c{
+    width:100%;
+    height:100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.yd-pop-box .bd,
+.yd-pop-box [wp="wpdom"]{
+    width:6.68rem;
+    margin:0 auto;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+    position: relative;
+    min-height:4rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    border-radius: 0.2rem;
+}
+.yd-pop-box [wp="wpdom"]:before{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    content:"";
+    background-size: 100% 100%;
+    z-index:1;
+}
+
+.yd-pop-box [wp="wpdom"] .close{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: -0.4rem;
+    top: -0.4rem;
+    background-size: 100% 100%;
+    cursor:pointer;
+    z-index:5;
+    background:#fff url(../images/close.png) center center no-repeat;
+    background-size :50% 50%;
+    border-radius :0.5rem;
+}
+.yd-pop-box .content{
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    width:100%;
+    position:relative;
+    z-index:4;
+    overflow:hidden;
+}
+.yd-pop-box .content .text{
+    color:#464646;
+    font-size:0.48rem;
+    width:80%;
+    margin:0 auto;
+    line-height:1.38;
+    text-align: left;
+    padding:0.6rem 0;
+}
+
+.yd-pop-box .btn{
+    width: 100%;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    border-top:1px solid #eaeaea;
+}
+.yd-pop-box .btn .col{
+    -webkit-flex:1;
+    flex: 1;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    align-self: center;
+}
+.yd-pop-box .btn .col:first-child{
+    border-right:1px solid #eaeaea;
+}
+.yd-pop-box .btn .col span{
+    display:inline-block;
+    padding:0.3rem 0.4rem;
+    color:#333;
+    border-radius:0.6rem;
+    cursor:pointer;
+    font-size:0.38rem;
+}
+.yd-pop-box .btn .col .ok{
+    color:#34adff;
+}
+
+.yd-pop-box [wp="wpdom"].alert{
+    padding: 0.8rem 0 0.8rem;
+}
+.yd-pop-box [wp="wpdom"].alert .btn{
+    display:none;
+}
+.yd-pop-box [wp="wpdom"].confirm .btn{
+    display:block;
+}

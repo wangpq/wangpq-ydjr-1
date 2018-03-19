@@ -1,0 +1,65 @@
+﻿body{
+    background-color:#f4f4f4;
+}
+/* 重置密码模块 start */
+.reset-box ul{
+   margin-top:0.48rem;
+}
+.reset-box li p{
+    display: -webkit-flex;
+    display: flex;
+    font-size:0.38rem;
+}
+.reset-box li p:first-of-type{
+    background:#fff;
+    margin:0.2rem 0.44rem;
+    padding:0.2rem 0.28rem;
+    border-radius:0.04rem;
+    border:1px solid #d8d8d8;
+}
+.reset-box li p:first-of-type input{
+    flex :1;
+    line-height:1;
+}
+.reset-box li p:first-of-type .btn{
+    text-align:center;
+    padding:0.12rem 0.28rem; 
+    border:1px solid #0ba4f4;
+    background-color: #0ba4f4;
+    color:#fff;
+    border-radius : 0.08rem;
+    cursor:default;
+}
+.reset-box li p:first-of-type .btn-time{
+    color:#fff;
+    background-color: #0ba4f4;
+}
+.reset-box .reset-tips{
+    margin-top:0.48rem;
+    color:#e75b44;
+    padding:0.2rem 0.44rem;
+    font-size:0.38rem;
+}
+.btn-primary{
+    background-color: #0ba4f4;
+    border-radius:0.1rem;
+    color:#fff;
+    padding:0.35rem 0;
+    margin:0 0.44rem;
+    text-align: center;
+    font-size:0.44rem;
+    margin-bottom:0.2rem;
+    transition:background-color 0.3s;
+    cursor:pointer;
+}
+.btn-primary:active{
+    background-color: #0090db;
+}
+.btn-primary.disable{
+    background-color: #a8a8a8;
+    cursor:default;
+}
+/* 重置密码模块 end */
+
+
+

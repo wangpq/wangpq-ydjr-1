@@ -1,0 +1,45 @@
+﻿html,body{
+    height:100%;
+    background-color:#fff;
+}
+.des{
+    padding:1.44rem 1.78rem;
+    display: none;
+}
+.des dl{
+    margin-bottom:1rem;
+}
+.des dl:last-of-type{
+    margin-bottom:0;
+}
+.des dt{
+    margin-top:0.25rem;
+    margin-bottom:0.6rem;
+    position: relative;
+}
+.des dt>img{
+    display: block;
+    width:100%;
+}
+.des dt>.txt{
+    position: absolute;
+    left:0;
+    right:0;
+    top:72%;
+    text-align:center;
+    color:#fff;
+    font-size:0.38rem;
+}
+.des dd{
+    padding:0;
+    font-size:0.32rem;
+    line-height: 1.68;
+    color:#717171;
+}
+.des dd a,
+.des dd a:visited{
+    color:#19509a;
+}
+.des dd a:acitve{
+    color:#19509a;
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>贵州通2017年度报告</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="贵州通2017年度报告">
+  <meta name="description" content="贵州通2017年度报告">
+  <meta name="author" content="Wangpq">
+  <meta name="applicable-device" content="mobile">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <!-- build:indexCss -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <!-- endbuild -->
+  <!-- build:flexibleJs -->
+  <script src="../js/flexible.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+<div class="btn-audio" ></div>
+<div class="page page1">
+    <div class="container">
+        <div class="header">
+            <h2><i class="starAnimate"></i></h2>
+        </div>
+        <div class="body">
+            <h1 class="wAni" data-animate="slideInDown" data-delay="0">2017年<br>贵州通大数据报告</h1>
+            <h2 class="wAni" data-animate="zoomIn" data-delay="500">让生活变得更轻松</h2>
+            <div class="star star_1 starAnimate"></div>
+            <div class="star star_2 starAnimate"></div>
+        </div>
+        <!--
+        <div class="foot">2018年1月1日</div>
+        -->
+        <canvas id="page_1_canvas"></canvas>
+    </div>
+</div>
+<div class="page page2">
+    <div class="container">
+        <canvas></canvas>
+        <div class="header">
+            <h2><i></i><span>贵州通 · 用户篇</span></h2>
+        </div>
+        <div class="body">
+            <div class="p">
+                <span class="txt">总用户数</span>
+                <span class="num" data-value="440190"></span>
+                <span class="txt">人</span>
+            </div>
+            <div class="p">
+                <span class="progress">
+                    <span class="progress-bar" data-value="100" style="width:0%;"></span>
+                </span>
+            </div>
+            <div class="p wAni" data-animate="slideInDown" data-delay="680">
+                2017年用户分布图
+            </div>
+            <div class="p">
+                <!--
+                <img src="../images/page2_map.png" alt="">
+                -->
+                <div class="gy-map">
+                    <div class="map wAni" data-animate="zoomIn" data-delay="1200">
+                        <div class="area zunyi">
+                            <i class="renAnimate"></i><span>遵义</span>
+                        </div>
+                        <div class="area tongren">
+                            <i class="disable"></i><span>铜仁</span>
+                        </div>
+                        <div class="area guiyang">
+                            <i class="renAnimate"></i><span>贵阳</span>
+                        </div>
+                        <div class="area anshun">
+                            <i class="disable"></i><span>安顺</span>
+                        </div>
+                        <div class="area duyun">
+                            <i class="renAnimate"></i><span>都匀</span>
+                        </div>
+                        <div class="area xingyi">
+                            <i class="renAnimate"></i><span>兴义</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="star star_1 starAnimate"></div>
+            <div class="star star_2 starAnimate"></div>
+        </div>
+        <canvas id="page_2_canvas"></canvas>
+    </div>
+</div>
+<div class="page page3">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 用户篇</span></h2>
+            <h4>——用户人群属性</h4>
+        </div>
+        <div class="body">
+            <div class="p hd">
+                <i></i>
+                <span>性别</span>
+            </div>
+            <div class="p bd">
+                <div class="tr">
+                    <div class="td">
+                        <i class="icon-man"></i>
+                        <span class="value">
+                            <span data-value="58" id="manPercent">0</span>%
+                        </span>
+                    </div>
+                    <div class="td">
+                        <i class="icon-woman"></i>
+                        <span class="value">
+                            <span data-value="42" id="womenPercent">0</span>%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="p hd wAni" data-animate="rotateInDownLeft" data-delay="310">
+                <i></i>
+                <span>年龄</span>
+            </div>
+            <div class="p bd wAni" data-animate="slideInUp" data-delay="350">
+                <!--
+                <div class="page3_bar" id="page3_bar">
+                </div>
+            -->
+
+                <img src="../images/page3_bar.png" alt="">
+
+            </div>
+        </div>
+        <canvas id="page_3_canvas"></canvas>
+        <div class="star star_1 starAnimate"></div>
+    </div>
+</div>
+<div class="page page4">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 功能篇</span></h2>
+            <h4>——功能使用排行榜</h4>
+        </div>
+        <div class="body">
+            <div class="earth-container">
+                <div class="earth">
+                    <div class="outer rotateAnimate"></div>
+                    <div class="inner"></div>
+                    <div class="txt txt_1">公交云卡</div>
+                    <div class="txt txt_2">公交卡充值</div>
+                    <div class="txt txt_3">投资理财（金融派）</div>
+                    <div class="txt txt_4">便民缴费</div>
+                    <div class="txt txt_5">招财马</div>
+                    <div class="txt txt_6">线上预约挂号</div>
+                    <div class="txt txt_7">快递查询</div>
+                    <div class="txt txt_8">花伴侣</div>
+                    <div class="txt txt_9">汽车报价</div>
+                    <div class="txt txt_10">企业信用查询</div>
+                    <div class="txt txt_11">青岩古镇套票</div>
+                    <div class="txt txt_12">线上售卡</div>
+                </div>
+            </div>
+        </div>
+        <div class="star star_1 starAnimate"></div>
+        <canvas id="page_4_canvas"></canvas>
+    </div>
+</div>
+<div class="page page5">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 功能篇</span></h2>
+            <h4>——公交云卡</h4>
+        </div>
+        <div class="body">
+            <p class="wAni" data-animate="zoomIn" data-delay="0">
+                <i class="icon-1"></i>
+                <span class="text">
+                    <span class="txt">使用人数</span>
+                    <span class="num" id="page5_user_nums" data-value="37138"></span>
+                    <span class="txt">人</span>
+                </span>
+            </p>
+            <p class="wAni" data-animate="zoomIn" data-delay="250">
+                <i class="icon-2"></i>
+                <span class="text">
+                    <span class="txt">使用次数</span>
+                    <span class="num" id="page5_use_nums" data-value="776684"></span>
+                    <span class="txt">次</span>
+                </span>
+            </p>
+            <p class="wAni" data-animate="zoomIn" data-delay="500">
+                <i class="icon-3"></i>
+                <span class="text">
+                    <span class="txt">减少二氧化碳排放量</span>
+                    <span class="num">1,496.83</span>
+                    <span class="txt">吨 , 相当于种植</span>
+                    <span class="num">20,531</span>
+                    <span class="txt">颗树</span>
+                </span>
+            </p>
+            <p class="tree">
+                <i class="icon-tree treeAnimate"></i>
+            </p>
+        </div>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+        <canvas id="page_5_canvas"></canvas>
+    </div>
+</div>
+<div class="page page6">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 功能篇</span></h2>
+            <h4>——公交云卡</h4>
+        </div>
+        <div class="body">
+
+            <p class="wAni" data-animate="slideInDown" data-delay="0">
+                <i class="icon-1"></i>
+                <span class="text">
+                    <span class="txt">充值总金额</span>
+                    <span class="num" id="page6_pay_sum" data-value="2493048.17"></span>
+                    <span class="txt">元</span>
+                </span>
+            </p>
+            <!--
+            <p class="wAni" data-animate="zoomIn" data-delay="600">
+                <i class="icon-2"></i>
+                <span class="text">
+                    <span class="txt">消费总金额</span>
+                    <span class="num" id="page6_consume_sum" data-value="747137.13"></span>
+                    <span class="txt">元</span>
+                </span>
+            </p>
+        -->
+            <p class="wAni" data-animate="zoomIn" data-delay="1200">
+                <span class="txt">乘车九折优惠共节省</span><span class="num">83,015.24</span><span class="txt">元</span><br>
+                <span class="txt">减少了</span>
+                <span class="num">7,728,060</span>
+                <span class="txt">元的纸币磨损,保卫了</span>
+                <span class="num">368</span>
+                <span class="txt">颗20岁的大树 </span>
+            </p>
+            <p class="tree">
+                <i class="icon-tree treeAnimate"></i>
+            </p>
+        </div>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+        <canvas id="page_6_canvas"></canvas>
+    </div>
+</div>
+<div class="page page7">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 功能篇</span></h2>
+            <h4>——普惠金融</h4>
+        </div>
+        <div class="body">
+            <div class="tr">
+                <!--
+                <p class="wAni" data-animate="zoomIn" data-delay="0">
+                    <i class="icon-1"></i>
+                    <span class="text">
+                        <span class="txt">总投资</span>
+                        <span class="num">67,274,146.69</span>
+                        <span class="txt">元</span>
+                    </span>
+                </p>
+            -->
+                <p class="wAni" data-animate="zoomIn" data-delay="800">
+                    <i class="icon-2"></i>
+                    <span class="text">
+                        <span class="txt">超过</span>
+                        <span class="num">10000</span>
+                        <span class="txt">人享受到金融服务</span>
+                    </span>
+                </p>
+            </div>
+            <div class="content">
+                <div class="box wAni" data-animate="rotateInUpLeft" data-delay="1200">
+                    <div class="ball xd">信贷</div>
+                    <div class="ball lc">理财</div>
+                    <div class="ball xyk">信用卡</div>
+                    <div class="ball gjs">贵金属</div>
+                    <div class="ball cx">车险</div>
+                    <div class="ball jj">基金</div>
+                    <div class="ball zq">证券</div>
+                </div>
+            </div>
+        </div>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+        <canvas id="page_7_canvas"></canvas>
+        <div class="foot lineAnimate">
+            <img src="../images/page7_foot_bg_1.png" alt="">
+            <img src="../images/page7_foot_bg_2.png" alt="">
+            <img src="../images/page7_foot_bg_3.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="page page8">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 功能篇</span></h2>
+            <h4>——招财马</h4>
+        </div>
+        <div class="body">
+            <div class="tr">
+                <div class="ma wAni" data-animate="zoomIn" data-delay="0">
+                    <!--
+                    <div class="item">
+                        <i class="chaoshi"></i>
+                        <span class="txt">超市</span>
+                    </div>
+                    <div class="item">
+                        <i class="canyin"></i>
+                        <span class="txt">餐饮</span>
+                    </div>
+                    <div class="item">
+                        <i class="qiche"></i>
+                        <span class="txt">汽车</span>
+                    </div>
+                    <div class="item">
+                        <i class="lvyou"></i>
+                        <span class="txt">旅游</span>
+                    </div>
+                    <div class="item">
+                        <i class="zhusu"></i>
+                        <span class="txt">住宿</span>
+                    </div>
+                    <div class="item">
+                        <i class="mrmf"></i>
+                        <span class="txt">美容美发</span>
+                    </div>
+                -->
+                </div>
+            </div>
+            <div class="tr">
+                <div class="gy-map wAni" data-animate="slideInUp" data-delay="1000">
+                    <div class="map">
+                        <!--
+                        <div class="area zunyi">
+                            <i></i><span>遵义</span>
+                        </div>
+                        <div class="area tongren">
+                            <i></i><span>铜仁</span>
+                        </div>
+                        -->
+                        <div class="area guiyang">
+                            <i class="starAnimate"></i><span>贵阳</span>
+                        </div>
+
+                        <div class="area anshun">
+                            <i></i><span>安顺</span>
+                        </div>
+                        <div class="area kaiyang">
+                            <i class="starAnimate"></i><span>开阳县</span>
+                        </div>
+                        <!--
+                        <div class="area duyun">
+                            <i class="starAnimate"></i><span>都匀</span>
+                        </div>
+                        <div class="area xingyi">
+                            <i class="starAnimate"></i><span>兴义</span>
+                        </div>
+                        -->
+                    </div>
+                    <div class="legend wAni" data-animate="slideInUp" data-delay="1200">
+                        <i></i><span>覆盖范围分布图</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="star star_1"></div>
+        <canvas id="page_8_canvas"></canvas>
+    </div>
+</div>
+<div class="page page9">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 展望2018</span></h2>
+            <h4>——新增功能</h4>
+        </div>
+        <div class="body">
+            <div class="tr">
+                <p class="wAni" data-animate="zoomIn" data-delay="0">
+                    <i class="icon-1"></i>
+                    <span class="txt">智慧交通——刷手机乘地铁</span>
+                    <span class="img"></span>
+                </p>
+                <p class="wAni" data-animate="zoomIn" data-delay="800">
+                    <i class="icon-2"></i>
+                    <span class="txt">智慧医疗——线上挂号</span>
+                    <span class="img"></span>
+                </p>
+                <p class="wAni" data-animate="zoomIn" data-delay="1600">
+                    <i class="icon-2"></i>
+                    <span class="txt">智慧旅游——省内路线智能规划</span>
+                    <span class="img"></span>
+                </p>
+                <p class="wAni" data-animate="zoomIn" data-delay="2400">
+                    <i class="icon-2"></i>
+                    <span class="txt">智慧商街——掌上消费折享生活</span>
+                    <span class="img"></span>
+                </p>
+                <p class="wAni" data-animate="zoomIn" data-delay="3200">
+                    <i class="icon-2"></i>
+                    <span class="txt">智慧乡村——黔货出山金融惠农</span>
+                    <span class="img"></span>
+                </p>
+                <p class="wAni" data-animate="zoomIn" data-delay="4000">
+                    <i class="icon-2"></i>
+                    <span class="txt">居民健康云卡——医疗服务便捷支付</span>
+                    <span class="img"></span>
+                </p>
+            </div>
+        </div>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+        <canvas id="page_9_canvas"></canvas>
+    </div>
+</div>
+<div class="page page10">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 展望2018</span></h2>
+            <h4>——彻底改变乘车方式</h4>
+        </div>
+        <div class="body">
+            <div class="item">
+                <div class="hd">2018年云卡乘车使用率(目标)</div>
+                <div class="bd first">
+                    <div class="tr">
+                        <div class="td">
+                            <div class="wpJdt" data-value="85" id="bus_2018">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">公交</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="td">
+                            <div class="wpJdt" data-value="62" id="brt_2018">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">BRT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="td">
+                            <div class="wpJdt" data-value="37" id="subway_2018">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">地铁</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="hd second">2017年云卡乘车使用率</div>
+                <div class="bd second">
+                    <div class="tr">
+                        <div class="td">
+                            <div class="wpJdt" data-value="30.4" id="bus_2017">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">公交</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="td">
+                            <div class="wpJdt" data-value="17.4" id="brt_2017">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">BRT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="visibility:hidden;">
+                <div class="hd">2016年云卡乘车使用率</div>
+                <div class="bd third">
+                    <div class="tr">
+                        <div class="td">
+                            <div class="wpJdt" data-value="9.8"  id="bus_2016">
+                                <div class="canvas"></div>
+                                <div class="text">
+                                    <div class="value"><b>0</b>%</div>
+                                    <div class="txt">公交</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="page_10_canvas"></canvas>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+    </div>
+</div>
+<div class="page page11">
+    <div class="container">
+        <div class="header">
+            <h2><i></i><span>贵州通 · 展望2018</span></h2>
+        </div>
+        <div class="body">
+            <div class="container">
+                <p>扫码下载贵州通</p>
+                      <!--
+                <p><img src="../images/page11_img.png" alt=""></p>
+               -->
+                <p class="keyword gongnengAnimate"><img src="../images/page11_keyword.png" alt=""></p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p><span>数据截至2017年12月31日23:59</span> </p>
+            <p>www.gztpay.com</p>
+        </div>
+        <canvas id="page_11_canvas"></canvas>
+        <div class="star star_1 starAnimate"></div>
+        <div class="star star_2 starAnimate"></div>
+    </div>
+</div>
+
+<!-- build:indexJs -->
+<script src="../js/zepto.js"></script>
+<script src="../js/echarts.js"></script>
+<script src="../js/progressBar.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/gztUtil.js"></script>
+<script src="../js/pageSlider.js"></script>
+<script src="../js/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>
+
+<!--
+<script src="../js/progressBar.js"></script>
+-->

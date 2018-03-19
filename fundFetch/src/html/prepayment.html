@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="贵州通公积金查询">
+<meta name="description" content="贵州通公积金查询">
+<meta name="author" content="Wangpq">
+<meta name="format-detection" content="telephone=no">  
+<meta http-equiv="x-rim-auto-match" content="none"> 
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- build:prepaymentCss -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/prepayment.css">
+<!-- endbuild -->
+<!-- build:flexible -->
+<script src="../js/flexible.js"></script>
+<!-- endbuild -->
+<!-- build:urlconfig -->
+<script src="../js/urlconfig.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+
+<section class="page active">
+	<header class="yd-hd">
+		<a href="javascript:void(0)" class="back"></a>
+		<div class="hd">还款</div>
+	</header>
+	<div class="yd-bd prepayment">
+		<div class="list-view">
+			<h2>您的贷款信息如下</h2>
+			<div class="bd">
+			<p>
+				<span class="name">借款人姓名</span>
+				<span class="val"></span>
+			</p>
+			<p>
+				<span class="name">购房地址</span>
+				<span class="val"></span>
+			</p>
+			<p>
+				<span class="name">贷款金额</span>
+				<span class="val"><span id="loanMoney"></span>元</span>
+			</p>	
+			<p>
+				<span class="name">贷款年限</span>
+				<span class="val">年</span>
+			</p>	
+			<p>
+				<span class="name">借款日期</span>
+				<span class="val"></span>
+			</p>	
+			<p>
+				<span class="name">贷款余额</span>
+				<span class="val" id="prevDkye">元</span>
+			</p>
+		    </div>
+		</div>
+		
+		<div class="work">
+			<dl>
+				<dd>
+					<div class="m"><i class="icon-prepayment-a"></i></div>
+					<div class="m"><i class="icon-prepayment-b"></i></div>
+				</dd>
+				<dt>
+					<span>我的公积金余额</span>
+					<span>我的公积金可用余额</span>
+				</dt>
+				<dd>
+					<div class="m"><span id="allBalance"></span>元</div>
+					<div class="m"><span id="usefulBalance"></span>元</div>
+				</dd>
+			</dl>
+
+			<div class="tr m" id="hkType">
+				<div class="td">
+					<div class="radio checked">
+						<i class="checked"></i><span>部分还款(最低还款5000元)</span>
+					</div>
+				</div>
+				<div class="td">
+					<div class="radio">
+						<i></i><span>全部结清</span>	
+					</div>
+				</div>
+			</div>
+
+            <div class="tr money"><input type="text" placeholder="请输入还款金额(不可超过可用余额)" id="number"></div>
+			
+            <div class="tr state"><span id="paymentState"><span class="txt">还款方式说明</span><i class="icon-pre-state"></i></span></div>
+    
+		    <div class="btn btn-primary disable" id="btnSure">确认提交</div>
+	</div>
+</section>
+
+
+<section class="yd-pop-box" data-dialog="true">
+	<div class="c">
+		<div class="bd" wp="wpdom">
+			<div class="close"></div>
+			<div class="content">
+				<div class="body">
+					<div class="head"></div>
+					<div class="text"></div>
+				</div>
+				<div class="btn">
+					<div class="col">
+						<span class="no">取消</span>
+					</div>
+					<div class="col">
+						<span class="ok">我知道了</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="payment-state-html">
+	<div class="payment-state">
+		<p><b>1、部分还款</b>：还款金额不低于5000元，还款后月还款金额减少<!--（例：贷款金额为100000元，假设分10个月还款，每个月还款10000。若提前还了10000元，则此后月均还款金额为9000元，即月均还款金额减少）-->；</p>
+		<p><b>2、全部结清</b>：在公积金可用余额充足的情况下，选择全部结清，可提前结清所有贷款。</p>
+	</div>
+</div>
+
+<div class="authcode-html">  
+	<div class="authcode-box">
+		<p>为保证您的资金安全，请点击获取验证码！(手机号为公积金中心预留手机号)</p>
+
+		<p>
+			<input type="tel" placeholder="账户手机号" id="userTell">
+		</p>
+
+		<p>
+			<input type="text" id="authCode" placeholder="请输入验证码" >
+			<span class="btn" id="btnAuthCode">获取验证码</span>
+		</p>
+	</div>
+</div>	
+
+<!-- build:prepaymentJs -->
+<script src="../js/fastclick.js"></script>
+<script src="../js/query.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/gztUtil.js"></script>
+<script src="../js/prepayment.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>巡检</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="巡检">
+  <meta name="description" content="巡检">
+  <meta name="author" content="Wangpq">
+  <!-- build:inspectstyle -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/inspect.css">
+  <!-- endbuild -->
+  <!-- build:flexible -->
+  <script src="../js/flexible.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+
+<section class="page">
+    <header class="yd-hd" data-id="index">
+        <a href="javascript:void(0)" class="back"></a>
+        <div class="hd">巡检</div>
+    </header>
+    <div class="yd-bd">
+        <div class="date-select">
+            <div class="m">
+                 <span class="t">开始</span>
+                 <div class="b">
+                     <input type="date" name="start" id="start">
+                     <span class="date" id="startDate"></span>
+                     <span class="week" id="week_1"></span>
+                     <span class="arrow" id="arrow_1"></span>
+                 </div>
+            </div>
+            <div class="m">
+                 <span class="t">结束</span>
+                 <div class="b">
+                     <input type="date" name="end" id="end">
+                     <span class="date" id="endDate"></span>
+                     <span class="week" id="week_2"></span>
+                     <span class="arrow" id="arrow_2"></span>
+                 </div>
+            </div>
+        </div>
+
+        <ul class="list-view">
+            <!--
+            <li class="row">
+                <span class="text">机房A巡检</span>
+                <span class="date">2017/6/13 13:00</span>
+            </li>
+            -->
+            <li class="loadMoreRow"><div class="loadMore"></div></li>
+        </ul>
+        <div class="btn-box">
+            <span class="btn btn-primary" id="btn-inspect">巡检</span>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <ul>
+        <li onclick="window.open('./index.html','_self')">
+            <i class="icon icon-home"></i>
+            <span class="text">首页</span>
+        </li>
+        <li class="active" onclick="window.open('./inspect.html','_self')">
+            <i class="icon icon-inspect"></i>
+            <span class="text">巡检</span>
+        </li>
+        <li onclick="window.open('./contacts.html','_self')">    
+            <i class="icon icon-contacts"></i>
+            <span class="text">通讯录</span>
+        </li>
+        <li onclick="window.open('./myself.html','_self')">
+            <i class="icon icon-user"></i>
+            <span class="text">我</span>
+        </li>
+    </ul>
+</footer>
+
+<!-- toast 开始 -->
+<div class="toast invisibile">
+    <div class="tip"></div>
+</div>
+<!-- toast 结束 -->
+
+<!--loading 动画开始-->
+<div class="loading invisibile" id="loading">
+    <div class="c">
+        <div class="body">
+            <div class="img"></div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</div>
+<!--loading 动画结束-->
+
+<!-- build:inspectjs -->
+<script src="../js/query.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/urlConf.js"></script>
+<script src="../js/inspect.js"></script>
+<!-- endbuild -->
+</body>
+</html>
